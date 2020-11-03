@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhangcw-qwq.github.io</id>
+    <title>ZhangCW-QwQ</title>
+    <updated>2020-11-03T12:16:10.779Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zhangcw-qwq.github.io"/>
+    <link rel="self" href="https://zhangcw-qwq.github.io/atom.xml"/>
+    <subtitle>这是一个蒟蒻的博客</subtitle>
+    <logo>https://zhangcw-qwq.github.io/images/avatar.png</logo>
+    <icon>https://zhangcw-qwq.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, ZhangCW-QwQ</rights>
+    <entry>
+        <title type="html"><![CDATA[fuck]]></title>
+        <id>https://zhangcw-qwq.github.io/post/fuck/</id>
+        <link href="https://zhangcw-qwq.github.io/post/fuck/">
+        </link>
+        <updated>2020-11-03T12:15:52.000Z</updated>
+        <content type="html"><![CDATA[<p>fuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuck</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[mmp]]></title>
+        <id>https://zhangcw-qwq.github.io/post/mmp/</id>
+        <link href="https://zhangcw-qwq.github.io/post/mmp/">
+        </link>
+        <updated>2020-11-03T11:15:08.000Z</updated>
+        <content type="html"><![CDATA[<p>mmpmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmpppppppppppppppppppppppppppppp</p>
+]]></content>
+    </entry>
+</feed>
