@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhangcw-qwq.github.io</id>
     <title>ZhangCW-QwQ</title>
-    <updated>2020-11-03T12:54:44.030Z</updated>
+    <updated>2020-11-04T10:51:17.400Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhangcw-qwq.github.io"/>
     <link rel="self" href="https://zhangcw-qwq.github.io/atom.xml"/>
@@ -11,21 +11,147 @@
     <icon>https://zhangcw-qwq.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ZhangCW-QwQ</rights>
     <entry>
-        <title type="html"><![CDATA[fuck]]></title>
-        <id>https://zhangcw-qwq.github.io/post/fuck/</id>
-        <link href="https://zhangcw-qwq.github.io/post/fuck/">
+        <title type="html"><![CDATA[test20201104 解题报告]]></title>
+        <id>https://zhangcw-qwq.github.io/post/test20201104-jie-ti-bao-gao/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201104-jie-ti-bao-gao/">
         </link>
-        <updated>2020-11-03T12:15:52.000Z</updated>
-        <content type="html"><![CDATA[<p>fuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuckfuck</p>
+        <updated>2020-11-04T10:50:36.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="t1-feliciano">T1 feliciano</h2>
+<pre><code>期望时间：30 min
+实际时间：50 min
+期望得分：100
+实际得分：60（这真不是我的锅）
+</code></pre>
+<p><s>题面写的不错</s></p>
+<p>每个道具有一定价值，一定花费，很容易想到<strong>01背包</strong></p>
+<p>正反各建一个有向图，用<strong>dijkstra</strong>在两个图上分别跑一次</p>
+<p>两个图上的每个点的权值和即在该点的道具的花费</p>
+<h2 id="t2-immortal">T2 Immortal</h2>
+<pre><code>期望时间：0 min
+实际时间：0 min
+期望得分：0
+实际得分：0
+</code></pre>
+<p>……</p>
+<h2 id="t3-light">T3 light</h2>
+<pre><code>期望时间：10 min
+实际时间：10 min
+期望得分：100
+实际得分：100
+</code></pre>
+<p><s>这题为什么不放T1</s></p>
+<p>手玩一下样例，<s>易得</s>可以用类似于辗转相除法的方式求解</p>
+<p>时间复杂度顶多 <strong>O（logn）</strong></p>
+<p>答案不会爆 long long</p>
+<h2 id="t4-wish">T4 wish</h2>
+<pre><code>期望时间：1.5 h
+实际时间：2.5 h
+期望得分：70
+实际得分：60
+</code></pre>
+<p><s>人一定要有梦想</s></p>
+<p>这题<s>显然</s>就是求合法方案数</p>
+<p>可以想到用<strong>区间极差 - 区间元素种类 = 不存在的元素的个数</strong>来判断该区间是否合法</p>
+<p>然而我脑抽的离散化了一下<s>不要问我为什么</s></p>
+<p>竟然还有60分QwQ</p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[mmp]]></title>
-        <id>https://zhangcw-qwq.github.io/post/mmp/</id>
-        <link href="https://zhangcw-qwq.github.io/post/mmp/">
+        <title type="html"><![CDATA[test20201103 解题报告]]></title>
+        <id>https://zhangcw-qwq.github.io/post/test20201103-jie-ti-bao-gao/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201103-jie-ti-bao-gao/">
         </link>
-        <updated>2020-11-03T11:15:08.000Z</updated>
-        <content type="html"><![CDATA[<p>mmpmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmpppppppppppppppppppppppppppppp</p>
+        <updated>2020-11-04T10:49:21.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="t0-系统更新">T0 系统更新</h2>
+<pre><code>期望时间：30 min（从7：30开始）
+实际时间：1.5 h
+</code></pre>
+<p>这段时间还是在看题面的……</p>
+<p>但是打不开 gedit……</p>
+<h2 id="t1-line">T1 line</h2>
+<pre><code>期望时间：30 min
+实际时间：20 min
+期望得分：100
+实际得分：100
+</code></pre>
+<p>我表示我不记得那个什么定理……</p>
+<p>我只是觉得这道题很像拦截导弹……</p>
+<p>感性证明了一下就上了……</p>
+<h2 id="t2-melon">T2 melon</h2>
+<pre><code>期望时间：1.5 h
+实际时间：2 h
+期望得分：100
+实际得分：70
+</code></pre>
+<p><s>至今未懂怎么WA的</s></p>
+<p>我的作法好像和题解是一样的……</p>
+<p>奇了怪了……</p>
+<p>首先要知道<strong>dfs序</strong>中，一个子树是一个区间</p>
+<p>然后就没有然后了……区间修改单点查询……</p>
+<h2 id="t3-purify">T3 purify</h2>
+<pre><code>期望时间：30 min
+实际时间：30 min
+期望得分：100
+实际得分：40
+</code></pre>
+<p><s>显然</s>只要把所有数字对应能净化TA的最小石头就行了</p>
+<p>60块石头很容易想到<strong>状态压缩</strong></p>
+<p>然后我来了个这样的神（sha）奇（bi）操（xing）作（wei）</p>
+<p><code>1ll * (1 &lt;&lt; k) , k&lt;=60</code></p>
+<p>100 ---&gt; 40</p>
+<h2 id="t4-sun">T4 sun</h2>
+<pre><code>期望时间：10 min
+实际时间：10 min
+期望得分：30
+实际得分：0
+</code></pre>
+<p>想打个 n 方暴力的……</p>
+<p>不知道为什么用了个 <strong>sort</strong> ……</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[test20201102 解题报告]]></title>
+        <id>https://zhangcw-qwq.github.io/post/test20201102-jie-ti-bao-gao/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201102-jie-ti-bao-gao/">
+        </link>
+        <updated>2020-11-04T10:41:24.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="t1-coin">T1 coin</h2>
+<pre><code>期望时间：10 min
+实际时间：10 min
+期望得分：100
+实际得分：100
+</code></pre>
+<p>一个硬币显然只有两个面<s>还可以竖起来</s></p>
+<p>贪心搞一下就好了</p>
+<h2 id="t2-gene">T2 gene</h2>
+<pre><code>期望时间：30 min
+实际时间：30 min
+期望得分：100
+实际得分：0
+</code></pre>
+<p><s>SAM那么可爱，为什么要卡SAM</s></p>
+<p>统计每个前缀在原串中出现次数的总和</p>
+<p>显然可以用SAM维护</p>
+<p><s>然而空间被卡了</s></p>
+<p>正解是KMP</p>
+<h2 id="t3-sheild">T3 sheild</h2>
+<pre><code>期望时间：1 h
+实际时间：1.5 h
+期望得分：100
+实际得分：60
+</code></pre>
+<p>关于这道题……</p>
+<p>我的思路是对的，做法是假的……</p>
+<p>以题目中的两个向量作为坐标的两个基</p>
+<p>把我代码里的逆矩阵换成求叉积就AC了……</p>
+<h2 id="t4-chronosphere">T4 chronosphere</h2>
+<pre><code>期望时间：2 h
+实际时间：1.5 h
+期望得分：40
+实际得分：40
+</code></pre>
+<p>只会打暴力……</p>
+<p>枚举每个点炸掉就好了</p>
 ]]></content>
     </entry>
 </feed>
