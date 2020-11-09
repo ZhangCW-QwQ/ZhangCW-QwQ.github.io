@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhangcw-qwq.github.io</id>
     <title>ZhangCW-QwQ</title>
-    <updated>2020-11-07T00:36:45.775Z</updated>
+    <updated>2020-11-09T08:01:43.556Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhangcw-qwq.github.io"/>
     <link rel="self" href="https://zhangcw-qwq.github.io/atom.xml"/>
@@ -10,6 +10,64 @@
     <logo>https://zhangcw-qwq.github.io/images/avatar.png</logo>
     <icon>https://zhangcw-qwq.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ZhangCW-QwQ</rights>
+    <entry>
+        <title type="html"><![CDATA[CSP2020 考试总结]]></title>
+        <id>https://zhangcw-qwq.github.io/post/csp2020-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/csp2020-kao-shi-zong-jie/">
+        </link>
+        <updated>2020-11-09T07:59:52.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="t1-julian">T1 julian</h2>
+<pre><code>期望时间：1 h
+实际时间：3 h
+期望得分：100
+实际得分：40
+</code></pre>
+<p>引用一下 ZHY 的一句话</p>
+<p>“有谁知道 T1 出题人是谁吗，我想当面感谢一下TA”</p>
+<p>大模拟</p>
+<p>我的算法需要算：</p>
+<p>格里高利历中 400年，100年，4年有多少天；</p>
+<p>儒略历用了多少天；</p>
+<p>儒略历的年月日显然很好算</p>
+<p>格里高利历中，把经过的天数减掉经过的 2 月 29 日，再将天数除以 365 就是年数</p>
+<p>月日就好算了</p>
+<p>but……会分不清闰年的 2 月 29 日和同年的 3 月 1 日……</p>
+<p>最后五分种想到做法忘了调参……</p>
+<p>100 -&gt; 40</p>
+<h2 id="t2-zoo">T2 zoo</h2>
+<pre><code>期望时间：30 min
+实际时间：30 min
+期望得分：100
+实际得分：90 左右
+</code></pre>
+<p>在需要判断是否要买饲料的数位上判断是否已有动物</p>
+<p>本来可以AC的……</p>
+<p>but……我特判答案为 2^64 时没 return 0……</p>
+<p>于是这种情况下我会输出两个 ans……</p>
+<h2 id="t3-call">T3 call</h2>
+<pre><code>期望时间：0 min
+实际时间：0 min
+期望得分：0
+实际得分：0
+</code></pre>
+<p><s>没写</s></p>
+<h2 id="t4-snakes">T4 snakes</h2>
+<pre><code>期望时间：0 min
+实际时间：0 min
+期望得分：0
+实际得分：0
+</code></pre>
+<p><s>没写</s></p>
+<p>优点 ：</p>
+<p>1.先将所有题目看了一遍，解题顺序大致正确（预想T2 -&gt; T1 -&gt;T3 -&gt; T4）</p>
+<p>2.考虑了很多细节（T1的闰年，T2爆 unsigned long long）</p>
+<p>缺点：</p>
+<p>1.过于紧张和敏感（T1的参数来来回回算了好多次，然而是计算器算的没有必要过多验算）</p>
+<p>2.对自己实力评估不正确（手残就不该开码农题，还一心要写正解）</p>
+<p>3.没有先打每道题的暴力（T3，T4直接没动）</p>
+<p><s>4.上了两次厕所</s></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[test20201106 考试总结]]></title>
         <id>https://zhangcw-qwq.github.io/post/test20201106-kao-shi-zong-jie/</id>
