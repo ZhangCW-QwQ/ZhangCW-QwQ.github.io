@@ -1,20 +1,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta name="description" content="T1 coin
-期望时间：10 min
-实际时间：10 min
-期望得分：100
-实际得分：100
-
-一个硬币显然只有两个面还可以竖起来
-贪心搞一下就好了
-T2 gene
+    <meta name="description" content="T1 coordinated
 期望时间：30 min
-实际时间：30 min
-期望得分：100
-实..." />
-    <meta name="keywords" content="考试总结" />
+实际时间：40 min
+期望得分：30
+实际得分：30
+
+结论题……
+没看出来……
+用期望之类的神奇证明可以知道边不为 0 就是 Yes……
+指数级暴力滚粗
+T2 green
+期望时间：..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://zhangcw-qwq.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://zhangcw-qwq.github.io/styles/main.css">
     
@@ -402,25 +401,21 @@ T2 gene
         <div class="postshow" style="padding-bottom: 0;">
             
             <div class="postdetailimg" style="width:100%;overflow: hidden;">
-                <img src="https://zhangcw-qwq.github.io/post-images/test20201102-jie-ti-bao-gao.jpg" class="postimage" style="cursor:auto">
+                <img src="https://zhangcw-qwq.github.io/post-images/test20201124-kao-shi-zong-jie.jpg" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2020-11-04</div>
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-12-08</div>
                 <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
                 <div class="posttag">
-                    
-                    <a href="https://zhangcw-qwq.github.io/tag/mojT1hARw/" class="postlink">
-                        <i class="fa fa-tag"></i> 考试总结
-                    </a>
                     
                 </div>
             </div>
             
         <div id="articlecontent">
             <div id="texttitle" style="text-align: center">
-                <h2>test20201102 考试总结</h2>
+                <h2>test20201124 考试总结</h2>
                 <!-- id 将作为查询条件 -->
-                <div id="pl" style="display:none">https://zhangcw-qwq.github.io/post/test20201102-jie-ti-bao-gao/</div>
+                <div id="pl" style="display:none">https://zhangcw-qwq.github.io/post/test20201124-kao-shi-zong-jie/</div>
                 <div id="rootaddr" style="display:none">https://zhangcw-qwq.github.io</div>
                 <span id="hotnum">
                     <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
@@ -428,43 +423,42 @@ T2 gene
                 </span>
             </div>
             <div class="text ">
-                <h2 id="t1-coin">T1 coin</h2>
-<pre><code>期望时间：10 min
-实际时间：10 min
-期望得分：100
-实际得分：100
-</code></pre>
-<p>一个硬币显然只有两个面<s>还可以竖起来</s></p>
-<p>贪心搞一下就好了</p>
-<h2 id="t2-gene">T2 gene</h2>
+                <h2 id="t1-coordinated">T1 coordinated</h2>
 <pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：100
-实际得分：0
+实际时间：40 min
+期望得分：30
+实际得分：30
 </code></pre>
-<p><s>SAM那么可爱，为什么要卡SAM</s></p>
-<p>统计每个前缀在原串中出现次数的总和</p>
-<p>显然可以用SAM维护</p>
-<p><s>然而空间被卡了</s></p>
-<p>正解是KMP</p>
-<h2 id="t3-sheild">T3 sheild</h2>
-<pre><code>期望时间：1 h
-实际时间：1.5 h
-期望得分：100
-实际得分：60
-</code></pre>
-<p>关于这道题……</p>
-<p>我的思路是对的，做法是假的……</p>
-<p>以题目中的两个向量作为坐标的两个基</p>
-<p>把我代码里的逆矩阵换成求叉积就AC了……</p>
-<h2 id="t4-chronosphere">T4 chronosphere</h2>
-<pre><code>期望时间：2 h
+<p>结论题……</p>
+<p>没看出来……</p>
+<p>用期望之类的神奇证明可以知道边不为 0 就是 Yes……</p>
+<p><s>指数级暴力滚粗</s></p>
+<h2 id="t2-green">T2 green</h2>
+<pre><code>期望时间：1.5 h
 实际时间：1.5 h
 期望得分：40
-实际得分：40
+实际得分：20
 </code></pre>
-<p>只会打暴力……</p>
-<p>枚举每个点炸掉就好了</p>
+<p>容易想到贪心</p>
+<p>把当前方案费用从小到大更新</p>
+<p>但是需要把负数转化为整数……</p>
+<h2 id="t3-open">T3 open</h2>
+<pre><code>期望时间：20 min
+实际时间：20 min
+期望得分：0
+实际得分：0
+</code></pre>
+<p>时间不够敲暴力……</p>
+<h2 id="t4-shared">T4 shared</h2>
+<pre><code>期望时间：1 h
+实际时间：1.5 h
+期望得分：0
+实际得分：30
+</code></pre>
+<p>写了个假的 DP……</p>
+<p>用 nlogn 的方法求最长上升子序列</p>
+<p>然后在TA的历史值上 DP……</p>
+<p>写了 1h 发现是假的……</p>
 
             </div>
             <hr style="width: 80%;">
@@ -502,7 +496,7 @@ T2 gene
             <div class="postfooter">
                 <ul class="post-copyright">
                     <li><strong>文章作者：</strong></li>
-            <li><strong>原文链接：</strong>https://zhangcw-qwq.github.io/post/test20201102-jie-ti-bao-gao/</li>
+            <li><strong>原文链接：</strong>https://zhangcw-qwq.github.io/post/test20201124-kao-shi-zong-jie/</li>
             <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
                 许可协议。转载请注明出处！</li>
             </ul>
@@ -510,17 +504,29 @@ T2 gene
         <div id="otherpost">
             
             <div class="prev-post-pc">
-                <div id="ppcontainer" onclick="window.location.href= 'https://zhangcw-qwq.github.io/post/test20201103-jie-ti-bao-gao/';return false">
+                <div id="ppcontainer" onclick="window.location.href= 'https://zhangcw-qwq.github.io/post/test20201125-kao-shi-zong-jie/';return false">
                     
-                    <img src="https://zhangcw-qwq.github.io/post-images/test20201103-jie-ti-bao-gao.jpg" style="width: 100%;" class="opimg">
+                    <img src="https://zhangcw-qwq.github.io/post-images/test20201125-kao-shi-zong-jie.jpg" style="width: 100%;" class="opimg">
                     
-                    <h4 class="optitle">test20201103 考试总结</h4>
+                    <h4 class="optitle">test20201125 考试总结</h4>
                 </div>
             </div>
             <div class="prev-post">
-                上一篇 <a href="https://zhangcw-qwq.github.io/post/test20201103-jie-ti-bao-gao/">test20201103 考试总结</a>
+                上一篇 <a href="https://zhangcw-qwq.github.io/post/test20201125-kao-shi-zong-jie/">test20201125 考试总结</a>
             </div>
             
+            
+            <div class="next-post-pc">
+                <div id="npcontainer" onclick="window.location.href= 'https://zhangcw-qwq.github.io/post/test20201122-kao-shi-zong-jie/';return false">
+                    
+                    <img src="https://zhangcw-qwq.github.io/post-images/test20201122-kao-shi-zong-jie.jpg" style="width: 100%;" class="opimg">
+                    
+                    <h4 class="optitle">test20201122 考试总结</h4>
+                </div>
+            </div>
+            <div class="next-post">
+                下一篇 <a href="https://zhangcw-qwq.github.io/post/test20201122-kao-shi-zong-jie/">test20201122 考试总结</a>
+            </div>
             
         </div>
     </div>
@@ -553,10 +559,10 @@ T2 gene
             <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#t1-coin">T1 coin</a></li>
-<li><a href="#t2-gene">T2 gene</a></li>
-<li><a href="#t3-sheild">T3 sheild</a></li>
-<li><a href="#t4-chronosphere">T4 chronosphere</a></li>
+<li><a href="#t1-coordinated">T1 coordinated</a></li>
+<li><a href="#t2-green">T2 green</a></li>
+<li><a href="#t3-open">T3 open</a></li>
+<li><a href="#t4-shared">T4 shared</a></li>
 </ul>
 </li>
 </ul>
@@ -798,7 +804,7 @@ T2 gene
                 var nc = new NewCounter();
                 nc.save({
                     time: 1,
-                    title: "test20201102 考试总结",
+                    title: "test20201124 考试总结",
                     url: pl,
                     xid: pl,
                 }).then(function (object) {

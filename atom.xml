@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhangcw-qwq.github.io</id>
     <title>ZhangCW-QwQ</title>
-    <updated>2020-11-13T03:49:00.350Z</updated>
+    <updated>2020-12-08T10:02:17.920Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhangcw-qwq.github.io"/>
     <link rel="self" href="https://zhangcw-qwq.github.io/atom.xml"/>
@@ -10,6 +10,324 @@
     <logo>https://zhangcw-qwq.github.io/images/avatar.png</logo>
     <icon>https://zhangcw-qwq.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ZhangCW-QwQ</rights>
+    <entry>
+        <title type="html"><![CDATA[noip2020 退役记]]></title>
+        <id>https://zhangcw-qwq.github.io/post/noip2020-tui-yi-ji/</id>
+        <link href="https://zhangcw-qwq.github.io/post/noip2020-tui-yi-ji/">
+        </link>
+        <updated>2020-12-08T09:46:07.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="20201204">2020.12.04</h3>
+<p>一大早 cy 喊我们出去活动活动</p>
+<p>然后跑到烈士公园去散步<s>然而走得脚底板疼</s></p>
+<p>公园里散步聊天跳广场舞的大爷大妈们惊奇地看着一群<s>智障儿童</s>朝气蓬勃的高中生蹦蹦跳跳</p>
+<p>也算是放松了一下吧……</p>
+<p><s>cy 拿着手机导航在公园迷路了</s></p>
+<p><s>好像鸽了我们一张合照</s></p>
+<p>下午紧急复习+学习数学</p>
+<p>晚上没什么心情写题……</p>
+<p><s>边搞颓边写题效率好像还挺高的</s></p>
+<p>最后把去年的括号树写了一下<s>TM调了半个多小时</s></p>
+<p>至今还没搞懂去年是怎么做到这题不挂分的……</p>
+<h3 id="20201205">2020.12.05</h3>
+<p>睡的不是很好……</p>
+<p>起床的时候发了一会儿呆以至于洗漱有点匆忙……</p>
+<p>没来得及买饮料就出发了TAT</p>
+<p>……</p>
+<p>为什么要从小门进前进楼啊……</p>
+<p>这次的机位挺不错的<s>角落里就是清净</s></p>
+<p>打了几个板子<s>好像只有快读和连边用上了</s></p>
+<p>开始考试QwQ</p>
+<p>----------------------------------------------------------我是分割线QwQ------------------------------------------------------------</p>
+<h2 id="t1-water">T1 water</h2>
+<pre><code>期望时间：30 min
+实际时间：30 min
+期望得分：100
+实际得分：90
+</code></pre>
+<p>显然是可以拓扑一下就可以了1</p>
+<p>感觉不会爆 long long</p>
+<p>干就完了</p>
+<h2 id="t2-string">T2 string</h2>
+<pre><code>期望时间：1.5 h
+实际时间：1.5 h
+期望得分：100
+实际得分：84
+</code></pre>
+<p>第一眼：哈希好题（上个礼拜学哈希的时候到处找题，找到一题喊一声QwQ）</p>
+<p>压对题型就很爽ヽ(✿ﾟ▽ﾟ)ノ</p>
+<p>（考前专门肝了三个专题：平衡树，哈希，线段树。竟然考了一个ヾ(≧▽≦*)o）</p>
+<p>那就可以暴力判了</p>
+<p>预处理出每个前缀和后缀的奇数字符数量</p>
+<p>枚举AB的长度即可</p>
+<h2 id="t3-ball">T3 ball</h2>
+<pre><code>期望时间：30 min
+实际时间：10 min
+期望得分：0
+实际得分：-
+</code></pre>
+<p>只会10分暴力……</p>
+<p>感觉写不完先跳了（考后觉得这个举动无比明智）</p>
+<h2 id="t4-walk">T4 walk</h2>
+<pre><code>期望时间：2 h
+实际时间：2 h 10 min
+期望得分：40
+实际得分：40
+</code></pre>
+<p>前 30 分显然可以暴搜过</p>
+<p>只有一维可以dp过</p>
+<p>特别判一下 -1</p>
+<p>40 分到手 (￣▽￣)～■干杯□～(￣▽￣)</p>
+<p>----------------------------------------------------------我是分割线QwQ------------------------------------------------------------</p>
+<p>这次考的就比较顺～～</p>
+<p>洛谷：90 + 96 + 0 + 40 = 226</p>
+<p>oitiku：100 + 84 + 0 + 40 = 224</p>
+<p>实际成绩：90 + 84 + 0 + 40 = 214</p>
+<p>真就各题民间数据分数取 min 加起来TAT</p>
+<p>这次考试的考试策略还是比较正确的（跳了T3<s>实际上是太菜写不出</s>）</p>
+<p>期望耗时与实际耗时比较接近</p>
+<p><s>虽然挂了点分</s></p>
+<p>----------------------------------------------------------我是分割线QwQ------------------------------------------------------------</p>
+<p>快乐的时光总是这么短暂TAT</p>
+<p>又要滚回去搞whk了TAT</p>
+<p>2 个月的集训时光</p>
+<p>迷茫过，放纵过</p>
+<p>终究还算是给自己交了一份比较满意的答卷</p>
+<p><s>比模拟考状态好太多了</s></p>
+<p>再见，OI<s>不是永别</s></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[test20201125 考试总结]]></title>
+        <id>https://zhangcw-qwq.github.io/post/test20201125-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201125-kao-shi-zong-jie/">
+        </link>
+        <updated>2020-12-08T09:44:39.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="t1-sudoku">T1 sudoku</h2>
+<pre><code>期望时间：30 min
+实际时间：2 h
+期望得分：50
+实际得分：50
+</code></pre>
+<p>引用题解金句：</p>
+<p>50 分 -&gt; 小模拟</p>
+<p>100 分 -&gt; 大模拟</p>
+<p>然后我 30 min 有了 50 分</p>
+<p>2 h 还是 50 分……</p>
+<h2 id="t2-protect">T2 protect</h2>
+<pre><code>期望时间：1 h
+实际时间：1 h
+期望得分：35
+实际得分：15
+</code></pre>
+<p>考虑部分分</p>
+<p>PP == 0：直接输出 Ai 之和即可</p>
+<p>n == 1 || (HP==1) : DP</p>
+<p>然后我 DP 挂掉了……</p>
+<h2 id="t3-color">T3 color</h2>
+<pre><code>期望时间：30 min
+实际时间：30 min
+期望得分：4
+实际得分：4
+</code></pre>
+<p><s>输样例</s></p>
+<p><s>手玩 n=4 失败</s></p>
+<h2 id="t4-commute">T4 commute</h2>
+<pre><code>期望时间：30 min
+实际时间：30 min
+期望得分：0
+实际得分：0
+</code></pre>
+<p>rand()</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[test20201124 考试总结]]></title>
+        <id>https://zhangcw-qwq.github.io/post/test20201124-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201124-kao-shi-zong-jie/">
+        </link>
+        <updated>2020-12-08T09:43:32.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="t1-coordinated">T1 coordinated</h2>
+<pre><code>期望时间：30 min
+实际时间：40 min
+期望得分：30
+实际得分：30
+</code></pre>
+<p>结论题……</p>
+<p>没看出来……</p>
+<p>用期望之类的神奇证明可以知道边不为 0 就是 Yes……</p>
+<p><s>指数级暴力滚粗</s></p>
+<h2 id="t2-green">T2 green</h2>
+<pre><code>期望时间：1.5 h
+实际时间：1.5 h
+期望得分：40
+实际得分：20
+</code></pre>
+<p>容易想到贪心</p>
+<p>把当前方案费用从小到大更新</p>
+<p>但是需要把负数转化为整数……</p>
+<h2 id="t3-open">T3 open</h2>
+<pre><code>期望时间：20 min
+实际时间：20 min
+期望得分：0
+实际得分：0
+</code></pre>
+<p>时间不够敲暴力……</p>
+<h2 id="t4-shared">T4 shared</h2>
+<pre><code>期望时间：1 h
+实际时间：1.5 h
+期望得分：0
+实际得分：30
+</code></pre>
+<p>写了个假的 DP……</p>
+<p>用 nlogn 的方法求最长上升子序列</p>
+<p>然后在TA的历史值上 DP……</p>
+<p>写了 1h 发现是假的……</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[test20201122 考试总结]]></title>
+        <id>https://zhangcw-qwq.github.io/post/test20201122-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201122-kao-shi-zong-jie/">
+        </link>
+        <updated>2020-12-08T09:42:41.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="t1-road">T1 road</h2>
+<pre><code>期望时间：20 min
+实际时间：20 min
+期望得分：100
+实际得分：40
+</code></pre>
+<p><s>mmp</s></p>
+<p>从 S 和 T 分别 bfs 一遍</p>
+<p>暴力枚举即可</p>
+<p>犯了个SB错误</p>
+<p>把 T 点默认为 n 了……</p>
+<h2 id="t2-multiset">T2 multiset</h2>
+<pre><code>期望时间：1.5 h
+实际时间：2 h
+期望得分：70
+实际得分：40
+</code></pre>
+<p>一个很暴力的做法</p>
+<p>开一棵线段树</p>
+<p>每个节点记录一下是否被完全覆盖或完全没覆盖</p>
+<p>其实可以离线搞</p>
+<p>but……我直接每个点开个 map 记录……</p>
+<p>咕了……</p>
+<h2 id="t3-tree">T3 tree</h2>
+<pre><code>期望时间：10 min
+实际时间：2 min
+期望得分：10
+实际得分：0
+</code></pre>
+<p>十分显然两个点都是 1/2</p>
+<p>but……输出时没换行而是空格……</p>
+<h2 id="t4-dance">T4 dance</h2>
+<pre><code>期望时间：1 h
+实际时间：1.5 h
+期望得分：40
+实际得分：40
+</code></pre>
+<p>暴力修改 20 分</p>
+<p>不存在操作 2 的话显然答案就是第一个数</p>
+<p>加起来 40 分</p>
+<p>最近过的好难受啊……</p>
+<p>晚上睡不好……</p>
+<p>没精神刷题……</p>
+<p>考试总挂分……</p>
+<p>智商每日愈下……</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[test20201121 考试总结]]></title>
+        <id>https://zhangcw-qwq.github.io/post/test20201121-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201121-kao-shi-zong-jie/">
+        </link>
+        <updated>2020-12-08T09:41:52.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="t1-garden">T1 garden</h2>
+<pre><code>期望时间：20 min
+实际时间：20 min
+期望得分：80
+实际得分：40
+</code></pre>
+<p><s>剪枝剪到手了</s></p>
+<p>暴力枚举两个点取最大值即可</p>
+<p>but……我的剪枝有问题……</p>
+<p>不会统计某个点和其左下方的点……</p>
+<h2 id="t2-sequence">T2 sequence</h2>
+<pre><code>期望时间：1 h
+实际时间：1.5 h
+期望得分：40
+实际得分：40
+</code></pre>
+<p>想了很久没想出来</p>
+<p>暴力枚举 30 分</p>
+<p>特判 K=0 10分</p>
+<h2 id="t3-reverse">T3 reverse</h2>
+<pre><code>期望时间：1 h
+实际时间：1.5 h
+期望得分：40
+实际得分：0
+</code></pre>
+<p>维护前 i 位的最小字典序和倒序的最小字典序</p>
+<p>暴力转移即可</p>
+<p>but……我当时以为最大字典序就是倒序的最小字典序……</p>
+<p>咕了……</p>
+<h2 id="t4-disconnected">T4 disconnected</h2>
+<pre><code>期望时间：1 h
+实际时间：40 min
+期望得分：40
+实际得分：40
+</code></pre>
+<p>暴力20分</p>
+<p>树的情况判一下 C 是否等于 0 即可 5 分</p>
+<p>M = N - 1 的情况找割边 15 分</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[test20201119 考试总结]]></title>
+        <id>https://zhangcw-qwq.github.io/post/test20201119-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201119-kao-shi-zong-jie/">
+        </link>
+        <updated>2020-12-08T09:40:24.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="t1-bit">T1 bit</h2>
+<pre><code>期望时间：1 h
+实际时间：1 h
+期望得分：60
+实际得分：60
+</code></pre>
+<p>题目要求的是一个这样的东西：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><munderover><mo>∑</mo><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><munderover><mo>∑</mo><mrow><mi>r</mi><mo>=</mo><mi>l</mi></mrow><mi>n</mi></munderover><mi>b</mi><mi>i</mi><mi>t</mi><mo>(</mo><mi>l</mi><mo>)</mo><mo>+</mo><mi>b</mi><mi>i</mi><mi>t</mi><mo>(</mo><mi>r</mi><mo>)</mo><mo>−</mo><mn>2</mn><mo>∗</mo><mi>l</mi><mi>c</mi><mi>p</mi><mo>(</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\sum_{l=1}^{n} \sum_{r=l}^{n} bit(l)+bit(r)-2*lcp(l,r)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.9535100000000005em;vertical-align:-1.302113em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mrel mtight">=</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">b</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">c</span><span class="mord mathdefault">p</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span></span></span></span></span></p>
+<p>开一棵 01 trie</p>
+<p>显然同一个子树内只需计算下面部分的 bit</p>
+<p>遍历一下就好了</p>
+<h2 id="t2-maid">T2 maid</h2>
+<pre><code>期望时间：1.5 h
+实际时间：2 h
+期望得分：0
+实际得分：10
+</code></pre>
+<p>暴力修改 50 分</p>
+<p>没有修改 离线乱搞 30 分</p>
+<h2 id="t3-build">T3 build</h2>
+<pre><code>期望时间：40 min
+实际时间：20 min
+期望得分：30
+实际得分：0
+</code></pre>
+<p>写了个 n！x 的暴力……</p>
+<p>算错时间复杂度了……</p>
+<h2 id="t4-prob">T4 prob</h2>
+<pre><code>期望时间：30 min
+实际时间：30 min
+期望得分：50
+实际得分：40
+</code></pre>
+<p>这是我最先写的题……</p>
+<p>n 方 DP 即可</p>
+<p>不知道怎么挂了 10 分……</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CSP2020 考试总结]]></title>
         <id>https://zhangcw-qwq.github.io/post/csp2020-kao-shi-zong-jie/</id>
@@ -208,104 +526,6 @@
 <p>可以想到用<strong>区间极差 - 区间元素种类 = 不存在的元素的个数</strong>来判断该区间是否合法</p>
 <p>然而我脑抽的离散化了一下<s>不要问我为什么</s></p>
 <p>竟然还有60分QwQ</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test20201103 考试总结]]></title>
-        <id>https://zhangcw-qwq.github.io/post/test20201103-jie-ti-bao-gao/</id>
-        <link href="https://zhangcw-qwq.github.io/post/test20201103-jie-ti-bao-gao/">
-        </link>
-        <updated>2020-11-04T10:49:21.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t0-系统更新">T0 系统更新</h2>
-<pre><code>期望时间：30 min（从7：30开始）
-实际时间：1.5 h
-</code></pre>
-<p>这段时间还是在看题面的……</p>
-<p>但是打不开 gedit……</p>
-<h2 id="t1-line">T1 line</h2>
-<pre><code>期望时间：30 min
-实际时间：20 min
-期望得分：100
-实际得分：100
-</code></pre>
-<p>我表示我不记得那个什么定理……</p>
-<p>我只是觉得这道题很像拦截导弹……</p>
-<p>感性证明了一下就上了……</p>
-<h2 id="t2-melon">T2 melon</h2>
-<pre><code>期望时间：1.5 h
-实际时间：2 h
-期望得分：100
-实际得分：70
-</code></pre>
-<p><s>至今未懂怎么WA的</s></p>
-<p>我的作法好像和题解是一样的……</p>
-<p>奇了怪了……</p>
-<p>首先要知道<strong>dfs序</strong>中，一个子树是一个区间</p>
-<p>然后就没有然后了……区间修改单点查询……</p>
-<h2 id="t3-purify">T3 purify</h2>
-<pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：100
-实际得分：40
-</code></pre>
-<p><s>显然</s>只要把所有数字对应能净化TA的最小石头就行了</p>
-<p>60块石头很容易想到<strong>状态压缩</strong></p>
-<p>然后我来了个这样的神（sha）奇（bi）操（xing）作（wei）</p>
-<p><code>1ll * (1 &lt;&lt; k) , k&lt;=60</code></p>
-<p>100 ---&gt; 40</p>
-<h2 id="t4-sun">T4 sun</h2>
-<pre><code>期望时间：10 min
-实际时间：10 min
-期望得分：30
-实际得分：0
-</code></pre>
-<p>想打个 n 方暴力的……</p>
-<p>不知道为什么用了个 <strong>sort</strong> ……</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test20201102 考试总结]]></title>
-        <id>https://zhangcw-qwq.github.io/post/test20201102-jie-ti-bao-gao/</id>
-        <link href="https://zhangcw-qwq.github.io/post/test20201102-jie-ti-bao-gao/">
-        </link>
-        <updated>2020-11-04T10:41:24.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t1-coin">T1 coin</h2>
-<pre><code>期望时间：10 min
-实际时间：10 min
-期望得分：100
-实际得分：100
-</code></pre>
-<p>一个硬币显然只有两个面<s>还可以竖起来</s></p>
-<p>贪心搞一下就好了</p>
-<h2 id="t2-gene">T2 gene</h2>
-<pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：100
-实际得分：0
-</code></pre>
-<p><s>SAM那么可爱，为什么要卡SAM</s></p>
-<p>统计每个前缀在原串中出现次数的总和</p>
-<p>显然可以用SAM维护</p>
-<p><s>然而空间被卡了</s></p>
-<p>正解是KMP</p>
-<h2 id="t3-sheild">T3 sheild</h2>
-<pre><code>期望时间：1 h
-实际时间：1.5 h
-期望得分：100
-实际得分：60
-</code></pre>
-<p>关于这道题……</p>
-<p>我的思路是对的，做法是假的……</p>
-<p>以题目中的两个向量作为坐标的两个基</p>
-<p>把我代码里的逆矩阵换成求叉积就AC了……</p>
-<h2 id="t4-chronosphere">T4 chronosphere</h2>
-<pre><code>期望时间：2 h
-实际时间：1.5 h
-期望得分：40
-实际得分：40
-</code></pre>
-<p>只会打暴力……</p>
-<p>枚举每个点炸掉就好了</p>
 ]]></content>
     </entry>
 </feed>

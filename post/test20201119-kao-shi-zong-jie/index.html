@@ -1,20 +1,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta name="description" content="T1 coin
-期望时间：10 min
-实际时间：10 min
-期望得分：100
-实际得分：100
+    <meta name="description" content="T1 bit
+期望时间：1 h
+实际时间：1 h
+期望得分：60
+实际得分：60
 
-一个硬币显然只有两个面还可以竖起来
-贪心搞一下就好了
-T2 gene
-期望时间：30 min
-实际时间：30 min
-期望得分：100
-实..." />
-    <meta name="keywords" content="考试总结" />
+题目要求的是一个这样的东西：
+∑l=1n∑r=lnbit(l)+bit(r)−2∗lcp(l,r)\sum_{l=1}^{n} \sum_{r=l}^{n}..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://zhangcw-qwq.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://zhangcw-qwq.github.io/styles/main.css">
     
@@ -402,25 +397,21 @@ T2 gene
         <div class="postshow" style="padding-bottom: 0;">
             
             <div class="postdetailimg" style="width:100%;overflow: hidden;">
-                <img src="https://zhangcw-qwq.github.io/post-images/test20201102-jie-ti-bao-gao.jpg" class="postimage" style="cursor:auto">
+                <img src="https://zhangcw-qwq.github.io/post-images/test20201119-kao-shi-zong-jie.jpg" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2020-11-04</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-12-08</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 2 min read</div>
                 <div class="posttag">
-                    
-                    <a href="https://zhangcw-qwq.github.io/tag/mojT1hARw/" class="postlink">
-                        <i class="fa fa-tag"></i> 考试总结
-                    </a>
                     
                 </div>
             </div>
             
         <div id="articlecontent">
             <div id="texttitle" style="text-align: center">
-                <h2>test20201102 考试总结</h2>
+                <h2>test20201119 考试总结</h2>
                 <!-- id 将作为查询条件 -->
-                <div id="pl" style="display:none">https://zhangcw-qwq.github.io/post/test20201102-jie-ti-bao-gao/</div>
+                <div id="pl" style="display:none">https://zhangcw-qwq.github.io/post/test20201119-kao-shi-zong-jie/</div>
                 <div id="rootaddr" style="display:none">https://zhangcw-qwq.github.io</div>
                 <span id="hotnum">
                     <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
@@ -428,43 +419,43 @@ T2 gene
                 </span>
             </div>
             <div class="text ">
-                <h2 id="t1-coin">T1 coin</h2>
-<pre><code>期望时间：10 min
-实际时间：10 min
-期望得分：100
-实际得分：100
-</code></pre>
-<p>一个硬币显然只有两个面<s>还可以竖起来</s></p>
-<p>贪心搞一下就好了</p>
-<h2 id="t2-gene">T2 gene</h2>
-<pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：100
-实际得分：0
-</code></pre>
-<p><s>SAM那么可爱，为什么要卡SAM</s></p>
-<p>统计每个前缀在原串中出现次数的总和</p>
-<p>显然可以用SAM维护</p>
-<p><s>然而空间被卡了</s></p>
-<p>正解是KMP</p>
-<h2 id="t3-sheild">T3 sheild</h2>
+                <h2 id="t1-bit">T1 bit</h2>
 <pre><code>期望时间：1 h
-实际时间：1.5 h
-期望得分：100
+实际时间：1 h
+期望得分：60
 实际得分：60
 </code></pre>
-<p>关于这道题……</p>
-<p>我的思路是对的，做法是假的……</p>
-<p>以题目中的两个向量作为坐标的两个基</p>
-<p>把我代码里的逆矩阵换成求叉积就AC了……</p>
-<h2 id="t4-chronosphere">T4 chronosphere</h2>
-<pre><code>期望时间：2 h
-实际时间：1.5 h
-期望得分：40
+<p>题目要求的是一个这样的东西：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><munderover><mo>∑</mo><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><munderover><mo>∑</mo><mrow><mi>r</mi><mo>=</mo><mi>l</mi></mrow><mi>n</mi></munderover><mi>b</mi><mi>i</mi><mi>t</mi><mo>(</mo><mi>l</mi><mo>)</mo><mo>+</mo><mi>b</mi><mi>i</mi><mi>t</mi><mo>(</mo><mi>r</mi><mo>)</mo><mo>−</mo><mn>2</mn><mo>∗</mo><mi>l</mi><mi>c</mi><mi>p</mi><mo>(</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\sum_{l=1}^{n} \sum_{r=l}^{n} bit(l)+bit(r)-2*lcp(l,r)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.9535100000000005em;vertical-align:-1.302113em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mrel mtight">=</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">b</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">c</span><span class="mord mathdefault">p</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span></span></span></span></span></p>
+<p>开一棵 01 trie</p>
+<p>显然同一个子树内只需计算下面部分的 bit</p>
+<p>遍历一下就好了</p>
+<h2 id="t2-maid">T2 maid</h2>
+<pre><code>期望时间：1.5 h
+实际时间：2 h
+期望得分：0
+实际得分：10
+</code></pre>
+<p>暴力修改 50 分</p>
+<p>没有修改 离线乱搞 30 分</p>
+<h2 id="t3-build">T3 build</h2>
+<pre><code>期望时间：40 min
+实际时间：20 min
+期望得分：30
+实际得分：0
+</code></pre>
+<p>写了个 n！x 的暴力……</p>
+<p>算错时间复杂度了……</p>
+<h2 id="t4-prob">T4 prob</h2>
+<pre><code>期望时间：30 min
+实际时间：30 min
+期望得分：50
 实际得分：40
 </code></pre>
-<p>只会打暴力……</p>
-<p>枚举每个点炸掉就好了</p>
+<p>这是我最先写的题……</p>
+<p>n 方 DP 即可</p>
+<p>不知道怎么挂了 10 分……</p>
 
             </div>
             <hr style="width: 80%;">
@@ -502,7 +493,7 @@ T2 gene
             <div class="postfooter">
                 <ul class="post-copyright">
                     <li><strong>文章作者：</strong></li>
-            <li><strong>原文链接：</strong>https://zhangcw-qwq.github.io/post/test20201102-jie-ti-bao-gao/</li>
+            <li><strong>原文链接：</strong>https://zhangcw-qwq.github.io/post/test20201119-kao-shi-zong-jie/</li>
             <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
                 许可协议。转载请注明出处！</li>
             </ul>
@@ -510,17 +501,29 @@ T2 gene
         <div id="otherpost">
             
             <div class="prev-post-pc">
-                <div id="ppcontainer" onclick="window.location.href= 'https://zhangcw-qwq.github.io/post/test20201103-jie-ti-bao-gao/';return false">
+                <div id="ppcontainer" onclick="window.location.href= 'https://zhangcw-qwq.github.io/post/test20201121-kao-shi-zong-jie/';return false">
                     
-                    <img src="https://zhangcw-qwq.github.io/post-images/test20201103-jie-ti-bao-gao.jpg" style="width: 100%;" class="opimg">
+                    <img src="https://zhangcw-qwq.github.io/post-images/test20201121-kao-shi-zong-jie.jpg" style="width: 100%;" class="opimg">
                     
-                    <h4 class="optitle">test20201103 考试总结</h4>
+                    <h4 class="optitle">test20201121 考试总结</h4>
                 </div>
             </div>
             <div class="prev-post">
-                上一篇 <a href="https://zhangcw-qwq.github.io/post/test20201103-jie-ti-bao-gao/">test20201103 考试总结</a>
+                上一篇 <a href="https://zhangcw-qwq.github.io/post/test20201121-kao-shi-zong-jie/">test20201121 考试总结</a>
             </div>
             
+            
+            <div class="next-post-pc">
+                <div id="npcontainer" onclick="window.location.href= 'https://zhangcw-qwq.github.io/post/csp2020-kao-shi-zong-jie/';return false">
+                    
+                    <img src="https://zhangcw-qwq.github.io/post-images/csp2020-kao-shi-zong-jie.jpg" style="width: 100%;" class="opimg">
+                    
+                    <h4 class="optitle">CSP2020 考试总结</h4>
+                </div>
+            </div>
+            <div class="next-post">
+                下一篇 <a href="https://zhangcw-qwq.github.io/post/csp2020-kao-shi-zong-jie/">CSP2020 考试总结</a>
+            </div>
             
         </div>
     </div>
@@ -553,10 +556,10 @@ T2 gene
             <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#t1-coin">T1 coin</a></li>
-<li><a href="#t2-gene">T2 gene</a></li>
-<li><a href="#t3-sheild">T3 sheild</a></li>
-<li><a href="#t4-chronosphere">T4 chronosphere</a></li>
+<li><a href="#t1-bit">T1 bit</a></li>
+<li><a href="#t2-maid">T2 maid</a></li>
+<li><a href="#t3-build">T3 build</a></li>
+<li><a href="#t4-prob">T4 prob</a></li>
 </ul>
 </li>
 </ul>
@@ -798,7 +801,7 @@ T2 gene
                 var nc = new NewCounter();
                 nc.save({
                     time: 1,
-                    title: "test20201102 考试总结",
+                    title: "test20201119 考试总结",
                     url: pl,
                     xid: pl,
                 }).then(function (object) {
