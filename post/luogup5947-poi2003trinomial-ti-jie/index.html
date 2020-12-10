@@ -1,22 +1,463 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://zhangcw-qwq.github.io</id>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="description" content="前置芝士：
+二项式定理：
+(x+y)n=∑i=1nCnixiyn−i(x+y)^n=\sum_{i=1}^nC_n^ix^iy^{n-i}  
+(x+y)n=i=1∑n​Cni​xiyn−i
+卢卡斯定理：
+Lucas(n,m,p)=Cn m..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://zhangcw-qwq.github.io/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://zhangcw-qwq.github.io/styles/main.css">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- 数学公式 -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css"
+        integrity="sha384-9tPv11A+glH/on/wEu99NVwDPwkMQESOocs/ZGXPoIiLE8MU/qkqUcZ3zzL+6DuH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js"
+        integrity="sha384-U8Vrjwb8fuHMt6ewaCy8uqeUXv4oitYACKdB0VziCerzt011iQ/0TqlSlv8MReCm" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/contrib/auto-render.min.js"
+        integrity="sha384-aGfk5kvhIq5x1x5YdvCp4upKZYnA8ckafviDpmWEKp4afOZEqOli7gqSnh8I6enH" crossorigin="anonymous">
+    </script>
+    <script>
+        renderMathInElement(document.body, {
+            delimiters: [{
+                    left: "$$",
+                    right: "$$",
+                    display: true
+                },
+                {
+                    left: "$",
+                    right: "$",
+                    display: false
+                }
+            ]
+        });
+    </script>
+
+    
     <title>ZhangCW-QwQ</title>
-    <updated>2020-12-10T09:47:10.946Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://zhangcw-qwq.github.io"/>
-    <link rel="self" href="https://zhangcw-qwq.github.io/atom.xml"/>
-    <subtitle>这是一个蒟蒻的博客</subtitle>
-    <logo>https://zhangcw-qwq.github.io/images/avatar.png</logo>
-    <icon>https://zhangcw-qwq.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, ZhangCW-QwQ</rights>
-    <entry>
-        <title type="html"><![CDATA[luoguP5947 [POI2003]Trinomial 题解]]></title>
-        <id>https://zhangcw-qwq.github.io/post/luogup5947-poi2003trinomial-ti-jie/</id>
-        <link href="https://zhangcw-qwq.github.io/post/luogup5947-poi2003trinomial-ti-jie/">
-        </link>
-        <updated>2020-12-10T09:35:28.000Z</updated>
-        <content type="html"><![CDATA[<p>前置芝士：</p>
+    
+    <style>
+        .markdownIt-TOC {
+            margin-left: 28%;
+            padding-left: 2px;
+            width: 80%;
+        }
+
+        .markdownIt-TOC li {
+            padding-left: 8%;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+    <div id="codeCopyText" style="display: none">代码复制成功了哦</div>
+    <div id="domainname" style="display:none">https://zhangcw-qwq.github.io</div>
+    <!-- 响应式布局，针对PC端内容显示 -->
+    <div id="content">
+        <div>
+            <div id="bar">
+                <head>
+  <!-- 引入Bootstrap核心样式文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/bootstrap.min.css">
+</head>
+<style>
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+  @media screen and (max-width:768px){
+    .mbapspan{
+      padding: 0;
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+          aria-expanded="false" id="barbutton">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://zhangcw-qwq.github.io">ZhangCW-QwQ&nbsp;&nbsp;|</a>
+        <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+            style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="barmenu">
+        <ul class="nav navbar-nav">
+          
+          
+          <li>
+            <a href="/">
+              首页
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/archives">
+              归档
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags">
+              标签
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/post/about">
+              关于
+            </a>
+          </li>
+          
+          
+          
+          
+          <li><a href="https://zhangcw-qwq.github.io/friends">友链</a></li>
+
+          
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+  var btstate = false;
+  var bt = $("#barbutton");
+  var bm = $("#barmenu");
+  bt.click(function(){
+    dropdown();
+  })
+  function dropdown(){
+    console.log(btstate);
+    //下拉
+    if(btstate==false){
+      bt.removeClass("collapsed");
+      bt.attr("aria-expanded","true");
+      bm.attr("aria-expanded","true")
+      bm.fadeIn(700);
+      btstate = true;
+    }
+    else{
+      bt.addClass("collapsed");
+      bt.attr("aria-expanded","false");
+      bm.removeClass("in");
+      bm.hide();
+      bm.attr("aria-expanded","false");
+      btstate = false;
+    }
+  }
+  </script> 
+</body>
+            </div>
+            <div class="row">
+                <div class="side"><body>
+    
+    <div id=side>
+        <div class="avatar-border">
+            <img src="https://zhangcw-qwq.github.io/images/avatar.png?v=1607593523243" class="avatar">
+        </div>
+        <div class="sitename">ZhangCW-QwQ</div>
+        <span class="describtion" data-text='["这是一个蒟蒻的博客"]'>&nbsp;</span>
+        
+        <div class="search">
+            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
+            <div class="search-results"></div>
+        </div>
+        
+    <div class="share-button">
+        <span>社交按钮</span>
+        
+        
+        <a onclick="showqq()"><i style="font-size: 20px;"><img class="icon" src="https://zhangcw-qwq.github.io/media/images/QQ.png" alt=""></i></a>
+        
+        
+        <a href="https://www.zhihu.com/people/ming-yue-ye-78-3-41" target="_blank"><i style="font-size: 20px;"><img class="icon"
+                    src="https://zhangcw-qwq.github.io/media/images/zh.png" alt=""></i></a>
+        
+        
+        <a href="https://space.bilibili.com/624171024" target="_blank"><i style="font-size: 20px;"><img class="icon"
+                    src="https://zhangcw-qwq.github.io/media/images/bilibili.png" alt=""></i></a>
+        
+        
+        
+    </div>
+    <div id="qq" style="display:none">1253875792</div>
+    
+    
+    <div class="mchocie describtion">
+        <a href="/" class="menubutton">
+            首页
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="/archives" class="menubutton">
+            归档
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="/tags" class="menubutton">
+            标签
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="/post/about" class="menubutton">
+            关于
+        </a>
+    </div>
+    
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="https://zhangcw-qwq.github.io/friends" class="menubutton">友人帐</a>
+    </div>
+    
+    <hr>
+    <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
+        href="https://github.com/850552586/gridea-theme-fog">Fog</a></div>
+    
+    
+    <script async src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/busuanzi.pure.mini.js"></script>
+    <div id="vistornum">
+        <span id="busuanzi_container_site_uv">
+            <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 总访问量:<span id="busuanzi_value_site_pv"></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <i class="fa fa-user-o" aria-hidden="true"></i> 访问人数:<span id="busuanzi_value_site_uv"></span>
+        </span>
+    </div>
+    <div style="color:white">Copyright © 2020  备案号: 鄂ICP备...号</div>
+    
+    </div>
+
+
+<script src="https://zhangcw-qwq.github.io/media/js/wordshow.js"></script>
+    
+
+
+
+
+    
+</body>
+<script>
+    //-------------------------------------------------搜索
+    // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
+    var searchInput = document.querySelector('.search-input');
+    var searchResults = document.querySelector('.search-results');
+
+    // 申明保存文章的标题、链接、内容的数组变量
+    var searchValue = '',
+        arrItems = [],
+        arrLinks = [],
+        arrTitles = [],
+        arrResults = [],
+        indexItem = [],
+        itemLength = 0;
+    var tmpDiv = document.createElement('div');
+    tmpDiv.className = 'result-item';
+
+    // ajax 的兼容写法
+    var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            xml = xhr.responseXML;
+            arrItems = xml.getElementsByTagName('entry');
+            itemLength = arrItems.length;
+            // 遍历并保存所有文章对应的标题、链接、内容到对应的数组中
+            // 同时过滤掉 HTML 标签
+            for (i = 0; i < itemLength; i++) {
+                var link = arrItems[i].getElementsByTagName('link')[0];
+                arrLinks[i] = link.getAttribute("href");
+                arrTitles[i] = arrItems[i].getElementsByTagName('title')[0].
+                childNodes[0].nodeValue.replace(/<.*?>/g, '');
+            }
+        }
+    }
+
+    // 开始获取根目录下 feed.xml 文件内的数据
+    xhr.open('get', '/atom.xml', true);
+    xhr.send();
+
+
+
+    // 输入框内容变化后就开始匹配，可以不用点按钮
+    // 经测试，onkeydown, onchange 等方法效果不太理想，
+    // 存在输入延迟等问题，最后发现触发 input 事件最理想，
+    // 并且可以处理中文输入法拼写的变化
+    searchInput.oninput = function () {
+        setTimeout(searchConfirm, 0);
+    }
+    searchInput.onfocus = function () {
+        searchResults.style.display = 'block';
+    }
+
+    function searchConfirm() {
+        if (searchInput.value == '') {
+            searchResults.style.display = 'none';
+        } else if (searchInput.value.search(/^\s+$/) >= 0) {
+            // 检测输入值全是空白的情况
+            searchInit();
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerText = '请输入有效内容...';
+            searchResults.appendChild(itemDiv);
+        } else {
+            // 合法输入值的情况
+            searchInit();
+            searchValue = searchInput.value;
+            // 在标题、内容中查找
+            searchMatching(arrTitles, searchValue);
+        }
+    }
+
+    // 每次搜索完成后的初始化
+    function searchInit() {
+        arrResults = [];
+        indexItem = [];
+        searchResults.innerHTML = '';
+        searchResults.style.display = 'block';
+    }
+
+    function searchMatching(arr1, input) {
+        // 忽略输入大小写
+        input = new RegExp(input, 'i');
+        // 在所有文章标题、内容中匹配查询值
+        for (i = 0; i < itemLength; i++) {
+            if (arr1[i].search(input) !== -1) {
+                var arr = arr1;
+                indexItem.push(i); // 保存匹配值的索引
+                var indexContent = arr[i].search(input);
+                // 此时 input 为 RegExp 格式 /input/i，转换为原 input 字符串长度
+                var l = input.toString().length - 3;
+                var step = 10;
+
+                // 将匹配到内容的地方进行黄色标记，并包括周围一定数量的文本
+                arrResults.push(arr[i].slice(indexContent - step, indexContent));
+            }
+        }
+
+        // 输出总共匹配到的数目
+        var totalDiv = tmpDiv.cloneNode(true);
+        totalDiv.innerHTML = '<b>总匹配：' + indexItem.length + ' 项<hr></b>';
+        searchResults.appendChild(totalDiv);
+
+        // 未匹配到内容的情况
+        if (indexItem.length == 0) {
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerText = '未匹配到内容...';
+            searchResults.appendChild(itemDiv);
+        }
+
+        // 将所有匹配内容进行组合
+        for (i = 0; i < arrResults.length; i++) {
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerHTML = '<b>[' + arrTitles[indexItem[i]] +
+                ']</b><p>' + arrResults[i] + "</p><hr />";
+            itemDiv.setAttribute('onclick', 'changeHref(arrLinks[indexItem[' + i + ']])');
+            searchResults.appendChild(itemDiv);
+        }
+    }
+
+    function changeHref(href) {
+        location.href = href;
+    }
+
+    function showqq() {
+        var qq = document.getElementById("qq").innerHTML;
+        if (qq != '')
+            window.location.href = "tencent://message/?uin=" + qq + "&Site=&Menu=yes";
+        else
+            alert("博主暂未设置QQ联系方式");
+    }
+</script>
+</div>
+                
+                <div id="tab1" class="tab">
+                    <div class="bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="close"></div>
+                </div>
+                <div class="col-md-1 col-lg-3"></div>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-10 col-lg-7">
+                    <link rel="stylesheet" href="https://zhangcw-qwq.github.io/media/css/font-awesome.css">
+
+<body>
+    <div class="allcontent" id="postdetail">
+        <div class="postshow" style="padding-bottom: 0;">
+            
+            <div class="postdetailimg" style="width:100%;overflow: hidden;">
+                <img src="https://zhangcw-qwq.github.io/post-images/luogup5947-poi2003trinomial-ti-jie.jpg" class="postimage" style="cursor:auto">
+            </div>
+            <div class="postinfo-detail">
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-12-10</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 3 min read</div>
+                <div class="posttag">
+                    
+                </div>
+            </div>
+            
+        <div id="articlecontent">
+            <div id="texttitle" style="text-align: center">
+                <h2>luoguP5947 [POI2003]Trinomial 题解</h2>
+                <!-- id 将作为查询条件 -->
+                <div id="pl" style="display:none">https://zhangcw-qwq.github.io/post/luogup5947-poi2003trinomial-ti-jie/</div>
+                <div id="rootaddr" style="display:none">https://zhangcw-qwq.github.io</div>
+                <span id="hotnum">
+                    <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
+                            class="hotnum">loading...</i></h4>
+                </span>
+            </div>
+            <div class="text ">
+                <p>前置芝士：</p>
 <p><strong>二项式定理</strong>：</p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mi>y</mi><msup><mo>)</mo><mi>n</mi></msup><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>C</mi><mi>n</mi><mi>i</mi></msubsup><msup><mi>x</mi><mi>i</mi></msup><msup><mi>y</mi><mrow><mi>n</mi><mo>−</mo><mi>i</mi></mrow></msup></mrow><annotation encoding="application/x-tex">(x+y)^n=\sum_{i=1}^nC_n^ix^iy^{n-i}  
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8746639999999999em;"><span style="top:-2.4530000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8746639999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.874664em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight">i</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
@@ -60,478 +501,349 @@ int main(){
 	return 0;
 }
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[noip2020 退役记]]></title>
-        <id>https://zhangcw-qwq.github.io/post/noip2020-tui-yi-ji/</id>
-        <link href="https://zhangcw-qwq.github.io/post/noip2020-tui-yi-ji/">
-        </link>
-        <updated>2020-12-08T09:46:07.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="20201204">2020.12.04</h3>
-<p>一大早 cy 喊我们出去活动活动</p>
-<p>然后跑到烈士公园去散步<s>然而走得脚底板疼</s></p>
-<p>公园里散步聊天跳广场舞的大爷大妈们惊奇地看着一群<s>智障儿童</s>朝气蓬勃的高中生蹦蹦跳跳</p>
-<p>也算是放松了一下吧……</p>
-<p><s>cy 拿着手机导航在公园迷路了</s></p>
-<p><s>好像鸽了我们一张合照</s></p>
-<p>下午紧急复习+学习数学</p>
-<p>晚上没什么心情写题……</p>
-<p><s>边搞颓边写题效率好像还挺高的</s></p>
-<p>最后把去年的括号树写了一下<s>TM调了半个多小时</s></p>
-<p>至今还没搞懂去年是怎么做到这题不挂分的……</p>
-<h3 id="20201205">2020.12.05</h3>
-<p>睡的不是很好……</p>
-<p>起床的时候发了一会儿呆以至于洗漱有点匆忙……</p>
-<p>没来得及买饮料就出发了TAT</p>
-<p>……</p>
-<p>为什么要从小门进前进楼啊……</p>
-<p>这次的机位挺不错的<s>角落里就是清净</s></p>
-<p>打了几个板子<s>好像只有快读和连边用上了</s></p>
-<p>开始考试QwQ</p>
-<p>----------------------------------------------------------我是分割线QwQ------------------------------------------------------------</p>
-<h2 id="t1-water">T1 water</h2>
-<pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：100
-实际得分：90
-</code></pre>
-<p>显然是可以拓扑一下就可以了</p>
-<p>感觉不会爆 long long</p>
-<p>干就完了</p>
-<h2 id="t2-string">T2 string</h2>
-<pre><code>期望时间：1.5 h
-实际时间：1.5 h
-期望得分：100
-实际得分：84
-</code></pre>
-<p>第一眼：哈希好题（上个礼拜学哈希的时候到处找题，找到一题喊一声QwQ）</p>
-<p>压对题型就很爽ヽ(✿ﾟ▽ﾟ)ノ</p>
-<p>（考前专门肝了三个专题：平衡树，哈希，线段树。竟然考了一个ヾ(≧▽≦*)o）</p>
-<p>那就可以暴力判了</p>
-<p>预处理出每个前缀和后缀的奇数字符数量</p>
-<p>枚举AB的长度即可</p>
-<h2 id="t3-ball">T3 ball</h2>
-<pre><code>期望时间：30 min
-实际时间：10 min
-期望得分：0
-实际得分：-
-</code></pre>
-<p>只会10分暴力……</p>
-<p>感觉写不完先跳了（考后觉得这个举动无比明智）</p>
-<h2 id="t4-walk">T4 walk</h2>
-<pre><code>期望时间：2 h
-实际时间：2 h 10 min
-期望得分：40
-实际得分：40
-</code></pre>
-<p>前 30 分显然可以暴搜过</p>
-<p>只有一维可以dp过</p>
-<p>特别判一下 -1</p>
-<p>40 分到手 (￣▽￣)～■干杯□～(￣▽￣)</p>
-<p>----------------------------------------------------------我是分割线QwQ------------------------------------------------------------</p>
-<p>这次考的就比较顺～～</p>
-<p>洛谷：90 + 96 + 0 + 40 = 226</p>
-<p>oitiku：100 + 84 + 0 + 40 = 224</p>
-<p>实际成绩：90 + 84 + 0 + 40 = 214</p>
-<p>真就各题民间数据分数取 min 加起来TAT</p>
-<p>这次考试的考试策略还是比较正确的（跳了T3<s>实际上是太菜写不出</s>）</p>
-<p>期望耗时与实际耗时比较接近</p>
-<p><s>虽然挂了点分</s></p>
-<p>----------------------------------------------------------我是分割线QwQ------------------------------------------------------------</p>
-<p>快乐的时光总是这么短暂TAT</p>
-<p>又要滚回去搞whk了TAT</p>
-<p>2 个月的集训时光</p>
-<p>迷茫过，放纵过</p>
-<p>终究还算是给自己交了一份比较满意的答卷</p>
-<p><s>比模拟考状态好太多了</s></p>
-<p>再见，OI<s>不是永别</s></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test20201125 考试总结]]></title>
-        <id>https://zhangcw-qwq.github.io/post/test20201125-kao-shi-zong-jie/</id>
-        <link href="https://zhangcw-qwq.github.io/post/test20201125-kao-shi-zong-jie/">
-        </link>
-        <updated>2020-12-08T09:44:39.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t1-sudoku">T1 sudoku</h2>
-<pre><code>期望时间：30 min
-实际时间：2 h
-期望得分：50
-实际得分：50
-</code></pre>
-<p>引用题解金句：</p>
-<p>50 分 -&gt; 小模拟</p>
-<p>100 分 -&gt; 大模拟</p>
-<p>然后我 30 min 有了 50 分</p>
-<p>2 h 还是 50 分……</p>
-<h2 id="t2-protect">T2 protect</h2>
-<pre><code>期望时间：1 h
-实际时间：1 h
-期望得分：35
-实际得分：15
-</code></pre>
-<p>考虑部分分</p>
-<p>PP == 0：直接输出 Ai 之和即可</p>
-<p>n == 1 || (HP==1) : DP</p>
-<p>然后我 DP 挂掉了……</p>
-<h2 id="t3-color">T3 color</h2>
-<pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：4
-实际得分：4
-</code></pre>
-<p><s>输样例</s></p>
-<p><s>手玩 n=4 失败</s></p>
-<h2 id="t4-commute">T4 commute</h2>
-<pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：0
-实际得分：0
-</code></pre>
-<p>rand()</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test20201124 考试总结]]></title>
-        <id>https://zhangcw-qwq.github.io/post/test20201124-kao-shi-zong-jie/</id>
-        <link href="https://zhangcw-qwq.github.io/post/test20201124-kao-shi-zong-jie/">
-        </link>
-        <updated>2020-12-08T09:43:32.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t1-coordinated">T1 coordinated</h2>
-<pre><code>期望时间：30 min
-实际时间：40 min
-期望得分：30
-实际得分：30
-</code></pre>
-<p>结论题……</p>
-<p>没看出来……</p>
-<p>用期望之类的神奇证明可以知道边不为 0 就是 Yes……</p>
-<p><s>指数级暴力滚粗</s></p>
-<h2 id="t2-green">T2 green</h2>
-<pre><code>期望时间：1.5 h
-实际时间：1.5 h
-期望得分：40
-实际得分：20
-</code></pre>
-<p>容易想到贪心</p>
-<p>把当前方案费用从小到大更新</p>
-<p>但是需要把负数转化为整数……</p>
-<h2 id="t3-open">T3 open</h2>
-<pre><code>期望时间：20 min
-实际时间：20 min
-期望得分：0
-实际得分：0
-</code></pre>
-<p>时间不够敲暴力……</p>
-<h2 id="t4-shared">T4 shared</h2>
-<pre><code>期望时间：1 h
-实际时间：1.5 h
-期望得分：0
-实际得分：30
-</code></pre>
-<p>写了个假的 DP……</p>
-<p>用 nlogn 的方法求最长上升子序列</p>
-<p>然后在TA的历史值上 DP……</p>
-<p>写了 1h 发现是假的……</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test20201122 考试总结]]></title>
-        <id>https://zhangcw-qwq.github.io/post/test20201122-kao-shi-zong-jie/</id>
-        <link href="https://zhangcw-qwq.github.io/post/test20201122-kao-shi-zong-jie/">
-        </link>
-        <updated>2020-12-08T09:42:41.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t1-road">T1 road</h2>
-<pre><code>期望时间：20 min
-实际时间：20 min
-期望得分：100
-实际得分：40
-</code></pre>
-<p><s>mmp</s></p>
-<p>从 S 和 T 分别 bfs 一遍</p>
-<p>暴力枚举即可</p>
-<p>犯了个SB错误</p>
-<p>把 T 点默认为 n 了……</p>
-<h2 id="t2-multiset">T2 multiset</h2>
-<pre><code>期望时间：1.5 h
-实际时间：2 h
-期望得分：70
-实际得分：40
-</code></pre>
-<p>一个很暴力的做法</p>
-<p>开一棵线段树</p>
-<p>每个节点记录一下是否被完全覆盖或完全没覆盖</p>
-<p>其实可以离线搞</p>
-<p>but……我直接每个点开个 map 记录……</p>
-<p>咕了……</p>
-<h2 id="t3-tree">T3 tree</h2>
-<pre><code>期望时间：10 min
-实际时间：2 min
-期望得分：10
-实际得分：0
-</code></pre>
-<p>十分显然两个点都是 1/2</p>
-<p>but……输出时没换行而是空格……</p>
-<h2 id="t4-dance">T4 dance</h2>
-<pre><code>期望时间：1 h
-实际时间：1.5 h
-期望得分：40
-实际得分：40
-</code></pre>
-<p>暴力修改 20 分</p>
-<p>不存在操作 2 的话显然答案就是第一个数</p>
-<p>加起来 40 分</p>
-<p>最近过的好难受啊……</p>
-<p>晚上睡不好……</p>
-<p>没精神刷题……</p>
-<p>考试总挂分……</p>
-<p>智商每日愈下……</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test20201121 考试总结]]></title>
-        <id>https://zhangcw-qwq.github.io/post/test20201121-kao-shi-zong-jie/</id>
-        <link href="https://zhangcw-qwq.github.io/post/test20201121-kao-shi-zong-jie/">
-        </link>
-        <updated>2020-12-08T09:41:52.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t1-garden">T1 garden</h2>
-<pre><code>期望时间：20 min
-实际时间：20 min
-期望得分：80
-实际得分：40
-</code></pre>
-<p><s>剪枝剪到手了</s></p>
-<p>暴力枚举两个点取最大值即可</p>
-<p>but……我的剪枝有问题……</p>
-<p>不会统计某个点和其左下方的点……</p>
-<h2 id="t2-sequence">T2 sequence</h2>
-<pre><code>期望时间：1 h
-实际时间：1.5 h
-期望得分：40
-实际得分：40
-</code></pre>
-<p>想了很久没想出来</p>
-<p>暴力枚举 30 分</p>
-<p>特判 K=0 10分</p>
-<h2 id="t3-reverse">T3 reverse</h2>
-<pre><code>期望时间：1 h
-实际时间：1.5 h
-期望得分：40
-实际得分：0
-</code></pre>
-<p>维护前 i 位的最小字典序和倒序的最小字典序</p>
-<p>暴力转移即可</p>
-<p>but……我当时以为最大字典序就是倒序的最小字典序……</p>
-<p>咕了……</p>
-<h2 id="t4-disconnected">T4 disconnected</h2>
-<pre><code>期望时间：1 h
-实际时间：40 min
-期望得分：40
-实际得分：40
-</code></pre>
-<p>暴力20分</p>
-<p>树的情况判一下 C 是否等于 0 即可 5 分</p>
-<p>M = N - 1 的情况找割边 15 分</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test20201119 考试总结]]></title>
-        <id>https://zhangcw-qwq.github.io/post/test20201119-kao-shi-zong-jie/</id>
-        <link href="https://zhangcw-qwq.github.io/post/test20201119-kao-shi-zong-jie/">
-        </link>
-        <updated>2020-12-08T09:40:24.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t1-bit">T1 bit</h2>
-<pre><code>期望时间：1 h
-实际时间：1 h
-期望得分：60
-实际得分：60
-</code></pre>
-<p>题目要求的是一个这样的东西：</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><munderover><mo>∑</mo><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><munderover><mo>∑</mo><mrow><mi>r</mi><mo>=</mo><mi>l</mi></mrow><mi>n</mi></munderover><mi>b</mi><mi>i</mi><mi>t</mi><mo>(</mo><mi>l</mi><mo>)</mo><mo>+</mo><mi>b</mi><mi>i</mi><mi>t</mi><mo>(</mo><mi>r</mi><mo>)</mo><mo>−</mo><mn>2</mn><mo>∗</mo><mi>l</mi><mi>c</mi><mi>p</mi><mo>(</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\sum_{l=1}^{n} \sum_{r=l}^{n} bit(l)+bit(r)-2*lcp(l,r)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.9535100000000005em;vertical-align:-1.302113em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.8478869999999998em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mrel mtight">=</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span><span style="top:-3.0500049999999996em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.302113em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">b</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">c</span><span class="mord mathdefault">p</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span></span></span></span></span></p>
-<p>开一棵 01 trie</p>
-<p>显然同一个子树内只需计算下面部分的 bit</p>
-<p>遍历一下就好了</p>
-<h2 id="t2-maid">T2 maid</h2>
-<pre><code>期望时间：1.5 h
-实际时间：2 h
-期望得分：0
-实际得分：10
-</code></pre>
-<p>暴力修改 50 分</p>
-<p>没有修改 离线乱搞 30 分</p>
-<h2 id="t3-build">T3 build</h2>
-<pre><code>期望时间：40 min
-实际时间：20 min
-期望得分：30
-实际得分：0
-</code></pre>
-<p>写了个 n！x 的暴力……</p>
-<p>算错时间复杂度了……</p>
-<h2 id="t4-prob">T4 prob</h2>
-<pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：50
-实际得分：40
-</code></pre>
-<p>这是我最先写的题……</p>
-<p>n 方 DP 即可</p>
-<p>不知道怎么挂了 10 分……</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CSP2020 保灵记]]></title>
-        <id>https://zhangcw-qwq.github.io/post/csp2020-kao-shi-zong-jie/</id>
-        <link href="https://zhangcw-qwq.github.io/post/csp2020-kao-shi-zong-jie/">
-        </link>
-        <updated>2020-11-09T07:59:52.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t1-julian">T1 julian</h2>
-<pre><code>期望时间：1 h
-实际时间：3 h
-期望得分：100
-实际得分：40
-</code></pre>
-<p>引用一下 ZHY 的一句话</p>
-<p>“有谁知道 T1 出题人是谁吗，我想当面感谢一下TA”</p>
-<p>大模拟</p>
-<p>我的算法需要算：</p>
-<p>格里高利历中 400年，100年，4年有多少天；</p>
-<p>儒略历用了多少天；</p>
-<p>儒略历的年月日显然很好算</p>
-<p>格里高利历中，把经过的天数减掉经过的 2 月 29 日，再将天数除以 365 就是年数</p>
-<p>月日就好算了</p>
-<p>but……会分不清闰年的 2 月 29 日和同年的 3 月 1 日……</p>
-<p>最后五分种想到做法忘了调参……</p>
-<p>100 -&gt; 40</p>
-<h2 id="t2-zoo">T2 zoo</h2>
-<pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：100
-实际得分：90 左右
-</code></pre>
-<p>在需要判断是否要买饲料的数位上判断是否已有动物</p>
-<p>本来可以AC的……</p>
-<p>but……我特判答案为 2^64 时没 return 0……</p>
-<p>于是这种情况下我会输出两个 ans……</p>
-<h2 id="t3-call">T3 call</h2>
-<pre><code>期望时间：0 min
-实际时间：0 min
-期望得分：0
-实际得分：0
-</code></pre>
-<p><s>没写</s></p>
-<h2 id="t4-snakes">T4 snakes</h2>
-<pre><code>期望时间：0 min
-实际时间：0 min
-期望得分：0
-实际得分：0
-</code></pre>
-<p><s>没写</s></p>
-<p>优点 ：</p>
-<p>1.先将所有题目看了一遍，解题顺序大致正确（预想T2 -&gt; T1 -&gt;T3 -&gt; T4）</p>
-<p>2.考虑了很多细节（T1的闰年，T2爆 unsigned long long）</p>
-<p>缺点：</p>
-<p>1.过于紧张和敏感（T1的参数来来回回算了好多次，然而是计算器算的没有必要过多验算）</p>
-<p>2.对自己实力评估不正确（手残就不该开码农题，还一心要写正解）</p>
-<p>3.没有先打每道题的暴力（T3，T4直接没动）</p>
-<p><s>4.上了两次厕所</s></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test20201106 考试总结]]></title>
-        <id>https://zhangcw-qwq.github.io/post/test20201106-kao-shi-zong-jie/</id>
-        <link href="https://zhangcw-qwq.github.io/post/test20201106-kao-shi-zong-jie/">
-        </link>
-        <updated>2020-11-06T13:32:44.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t1-sort">T1 sort</h2>
-<pre><code>期望时间：20 min
-实际时间：20 min
-期望得分：100
-实际得分：100
-</code></pre>
-<p><s>这么水的贪心竟然那么多人挂了</s></p>
-<p>每次把输入的数丢进栈，判断是否有未进过栈的元素比栈顶元素大</p>
-<p>有则弹出栈顶元素</p>
-<h2 id="t2-forest">T2 forest</h2>
-<pre><code>期望时间：1.5 h
-实际时间：2 h
-期望得分：0
-实际得分：10
-</code></pre>
-<p><s>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊丧尽天良</s></p>
-<p>我是想打暴力的……</p>
-<p>然后暴力打炸了……</p>
-<h2 id="t3-sp">T3 sp</h2>
-<pre><code>期望时间：40 min
-实际时间：20 min
-期望得分：60
-实际得分：50
-</code></pre>
-<p>就打算写无环的那 60 分</p>
-<p>找两点的 LCA 即可</p>
-<h2 id="t4-thr">T4 thr</h2>
-<pre><code>期望时间：30 min
-实际时间：0 min
-期望得分：0
-实际得分：0
-</code></pre>
-<p><s>看都没看</s></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test20201105 考试总结]]></title>
-        <id>https://zhangcw-qwq.github.io/post/test20201105-kao-shi-zong-jie/</id>
-        <link href="https://zhangcw-qwq.github.io/post/test20201105-kao-shi-zong-jie/">
-        </link>
-        <updated>2020-11-06T13:30:36.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t1-store">T1 store</h2>
-<pre><code>期望时间：20 min
-实际时间：30 min
-期望得分：100
-实际得分：50
-</code></pre>
-<p>贪心处理即可</p>
-<p>但是有很多细节</p>
-<p>比如 unsigned long long</p>
-<p>但是我挂在了没有判 Ai &lt; Bi 时 Ai 是否不大于 S（但是 Ai == Bi 时我判了……）</p>
-<h2 id="t2-portal">T2 portal</h2>
-<pre><code>期望时间：1.5 h
-实际时间：1 h
-期望得分：0
-实际得分：0
-</code></pre>
-<p>当时想到的是对于四个象限各维护一棵线段树</p>
-<p>感觉自己码力不够就先去搞了 T3</p>
-<p>然后就没回来了……</p>
-<p>应该先打 40 分的暴力的……</p>
-<h2 id="t3-purify">T3 purify</h2>
-<pre><code>期望时间：1 h
-实际时间：2 h
-期望得分：0
-实际得分：10
-</code></pre>
-<p>考虑DP</p>
-<p>显然每一列单独计算</p>
-<p>对于每一串同色连续棋子</p>
-<p>维护四个信息：</p>
-<p>dp[i] [0] [0] 将该串棋子及以上的棋子全部缩成一个 0 棋子的代价</p>
-<p>dp[i] [1] [0] 将该串棋子及以上的棋子全部缩成一个 1 棋子的代价</p>
-<p>dp[i] [0] [1] 将该串棋子及以上的棋子全部缩成一串 0 棋子的代价</p>
-<p>dp[i] [1] [1] 将该串棋子及以上的棋子全部缩成一串 1 棋子的代价</p>
-<p>从上往下转移即可</p>
-<p>然而没调出来……</p>
-<h2 id="t4-sun">T4 sun</h2>
-<pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：90
-实际得分：100
-</code></pre>
-<p>Prim 有 60 分</p>
-<p>性质 2 将某条边的权值乘上 n - 1 输出，有 10 分</p>
-<p>性质 3 若全部权值相同则输出 0 ，否则输出 1，有 20 分</p>
-<p>然后就有了 <strong>100</strong> 分的好成绩</p>
-<p>别问我 60 + 10 + 20 为什么是 100……</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            <hr style="width: 80%;">
+            
+            <div class="sharebtnContainer">
+                <button type="button" class="sharebtn">转载分享</button>
+            </div>
+            <div class="shareContainer">
+                <div class="share" style="height:30px;background: white;">
+                    <a class="qq" href=""><i><img class="shareicon"
+                                src="https://zhangcw-qwq.github.io/media/images/QQ.png" alt=""></i></a>
+                    <a class="wechat" href=""><i><img class="shareicon"
+                                src="https://zhangcw-qwq.github.io/media/images/wechat.png" alt=""></i></a>
+                    <a class="weibo" href=""><i><img class="shareicon"
+                                src="https://zhangcw-qwq.github.io/media/images/weibo.png" alt=""></i></a>
+                    <a class="qzone" href=""><i><img class="shareicon"
+                                src="https://zhangcw-qwq.github.io/media/images/qzone.png" alt=""></i></a>
+                    <a class="douban" href=""><i><img class="shareicon"
+                                src="https://zhangcw-qwq.github.io/media/images/douban.png" alt=""></i></a>
+                    <a class="facebook" href=""><i><img class="shareicon"
+                                src="https://zhangcw-qwq.github.io/media/images/facebook.png" alt=""></i></a>
+                    <a class="twitter" href=""><i><img class="shareicon"
+                                src="https://zhangcw-qwq.github.io/media/images/twitter.png" alt=""></i></a>
+                </div>
+            </div>
+            
+            
+            <div class="donateContainer">
+                <img src="https://zhangcw-qwq.github.io/media/images/donate.png" alt="" class="donateImg">
+            </div>
+            <div class="donateContainer">
+                <img src="" alt="" class="donate">
+            </div>
+            
+            <div class="postfooter">
+                <ul class="post-copyright">
+                    <li><strong>文章作者：</strong></li>
+            <li><strong>原文链接：</strong>https://zhangcw-qwq.github.io/post/luogup5947-poi2003trinomial-ti-jie/</li>
+            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
+                许可协议。转载请注明出处！</li>
+            </ul>
+        </div>
+        <div id="otherpost">
+            
+            
+            <div class="next-post-pc">
+                <div id="npcontainer" onclick="window.location.href= 'https://zhangcw-qwq.github.io/post/noip2020-tui-yi-ji/';return false">
+                    
+                    <img src="https://zhangcw-qwq.github.io/post-images/noip2020-tui-yi-ji.jpg" style="width: 100%;" class="opimg">
+                    
+                    <h4 class="optitle">noip2020 退役记</h4>
+                </div>
+            </div>
+            <div class="next-post">
+                下一篇 <a href="https://zhangcw-qwq.github.io/post/noip2020-tui-yi-ji/">noip2020 退役记</a>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+<script>
+    //文章阅读热度
+    var pl = $("#pl").html();
+    var rootaddr = $("#rootaddr").html();
+    pl = pl.replace(rootaddr, "");
+    $("#hotnum").attr('id', pl);
+</script>
+                <div id="comment"  class="comment" style="background: white">
+                    <div class="commentcontainer">
+                        
+                        <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                        
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-1 col-lg-2"></div>
+                <div id="bg">
+                </div>
+            </div>
+            
+        
+        <div class="toc-container">
+            
+    </div>
+    </div>
+    </div>
+    <div class="tog">
+        <div class="toggleContainer">
+            <div class="toggle">
+                <i class="fas fa-angle-double-up"></i>
+            </div>
+        </div>
+    </div>
+    <div id="bgchoice" style="display: none">default</div>
+    
+    <div id="bgurl" style="display:none">/media/images/custom-bgimage.jpg</div>
+    
+    </div>
+</body>
+<script>
+    var img = $("img");
+    for (var i = 0; i < img.length; i++) {
+        if (img.eq(i).attr("class") == undefined) {
+            img.eq(i).attr("class", "lazyload");
+            var imgsrc = img.eq(i).attr("src");
+            img.eq(i).attr("data-original", imgsrc);
+            img.eq(i).attr("src", "");
+            img.eq(i).hide();
+        }
+    }
+</script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+<script>
+    //寻找所有code标签，加复制按钮鸭！(行内代码除外)
+    var codes = document.getElementsByTagName('code');
+    if (codes.length) {
+        for (var i = 0; i < codes.length; i++) {
+            //高度/行高=文本行数
+            // var rowNum=Math.round(codes[i].height()/parseFloat(codes[i].css('line-height')));
+            // console.log("当前有"+rowNum+"行");
+            var code_id = "code_id_" + i;
+            codes[i].setAttribute("id", code_id);
+            var ci = "#" + code_id;
+            var codedot = $(ci);
+            var rowNum = Math.round(codedot.height() / parseFloat(codedot.css('line-height')));
+            if (rowNum <= 1) continue;
+            var btn = document.createElement("button");
+            btn.setAttribute("class", "copybt");
+            btn.setAttribute("data-clipboard-target", "#" + code_id);
+            btn.innerHTML = '复制代码';
+            codes[i].parentNode.insertBefore(btn, codes[i]);
+        }
+    };
+    var cop = new ClipboardJS('.copybt');
+    var codeCopyText = $("#codeCopyText").html();
+    cop.on('success', function (e) {
+        alert(codeCopyText);
+        e.clearSelection();
+    });
+    cop.on('error', function (e) {
+        alert("矮油，复制失败了...手动复制吧勇士！");
+        e.clearSelection();
+    });
+</script>
+
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
+<script type="text/javascript" src="https://zhangcw-qwq.github.io/media/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://zhangcw-qwq.github.io/media/live2d/assets/tororo.model.json");
+</script>
+
+<script>
+    $(function () {
+        $('.toggleContainer').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+        $(window).scroll(function () {
+            var st = $(window).scrollTop();
+            if (st > 30) {
+                $(".toggleContainer").fadeIn(400);
+            } else {
+                $(".toggleContainer").fadeOut(100);
+            }
+        });
+    });
+</script>
+
+<script>
+    var bgchoice = $('#bgchoice').html();
+    var bg = $('#bg');
+    var bgurl = document.getElementById("bgurl").innerHTML;
+    if (bgchoice == 'default')
+        for (var i = 0; i < 3; i++)
+            bgurl = bgurl.replace("\\", "/");
+    bg.css("background", "url('" + bgurl + "')");
+</script>
+
+
+<script src="https://zhangcw-qwq.github.io/media/js/index.js"></script>
+
+
+
+<!-- 动态更改上(下)一篇博客图片框长宽 -->
+<script>
+    npcontainer = document.querySelector('#npcontainer');
+    npstyle = window.getComputedStyle(npcontainer, null);
+    npwidth = npstyle.width;
+    npheight = 0.6 * Number(npwidth.replace("px", ""));
+    npheight = npheight.toString() + "px";
+    var op = $(".opimg");
+    op.css("height", npheight);
+</script>
+
+<script src="https://zhangcw-qwq.github.io/media/share/dist/Share.js"></script>
+
+<script>
+    var avatarSrc = $(".avatar").attr("src");
+    var dp = document.getElementsByClassName("describtion")[0].innerHTML;
+</script>
+
+
+<script>
+    var title = document.getElementById("texttitle").getElementsByTagName("h2");
+    
+    var share = new Share('.share', {
+        title: title[0].innerHTML,
+        initialized: true,
+        //默认获取网站描述
+        description: dp,
+        //网站图片默认获取的是设置的用户头像
+        image: avatarSrc,
+        //激活的分享网站
+        sites: ["weibo", "qq", "wechat", "douban", "qzone", "facebook", "twitter", "google"],
+        //微信分享PC端会生成二维码分享,移动端如果可以唤起微信最好
+        wechatQrcodeTitle: "微信扫一扫：分享", // 微信二维码提示文字
+        wechatQrcodeHelper: '<p>微信里扫一下二维码</p><p>便可将本文分享至朋友圈。</p>',
+        //关闭的网站分享
+        disabled: ['google', 'linkedin'],
+        wechatQrcodePosition: 'bottom'
+    });
+
+    //点击分享按钮展现出分享icons
+    var sharebtnTag = false;
+    $(".sharebtn").click(function () {
+        if(!sharebtnTag)
+        {
+            $(".share").show();
+            sharebtnTag = true;
+        }
+        else
+        {
+            $(".share").hide();
+            sharebtnTag = false;
+        }
+    })
+
+    var donatebtnTag = false;
+    $(".donateImg").click(function () {
+        if(!donatebtnTag)
+        {
+            $(".donate").show();
+            donatebtnTag = true;
+        }
+        else{
+            $(".donate").hide();
+            donatebtnTag = false;
+        }
+    })
+
+    //加载后的事件同步（阅读量、移动端评论等
+    window.onload=function(){
+        getHotnum();
+        var sharepc = $(".share").eq(0).html();
+        $(".share").eq(1).html(sharepc);
+        document.getElementById("veditor").setAttribute("placeholder", jrsc);
+        aplayerbtnInit();
+    }
+</script>
+
+
+<script>
+    jQuery(document).ready(function ($) {
+        function lazyload() {
+            var oLazyload = $("img.lazyload"),
+                fLazyload = function (hLazyload) {
+                    var nLazyload = $(window).height() + $(document).scrollTop();
+                    oLazyload.each(function () {
+                        $(this).offset().top < nLazyload && ($(this).trigger("appear"), oLazyload =
+                            oLazyload.not(this));
+                    }), 0 == oLazyload.length && $(window).unbind("scroll", fLazyload);
+                };
+            oLazyload.each(function () {
+                $(this).one("appear", function () {
+                    $(this).attr("src", $(this).attr("data-original"));
+                    $(this).fadeIn(500);
+                });
+            }), $(window).bind("scroll", fLazyload), fLazyload();
+        }
+        lazyload();
+    });
+</script>
+
+<!-- <script src="https://zhangcw-qwq.github.io/media/js/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->
+
+<script>
+    function getHotnum() {
+        //文章阅读热度（重构，利用leancloud原生api）
+        var pl = $("#pl").html();
+        var rootaddr = $("#rootaddr").html();
+        pl = pl.replace(rootaddr, "");
+
+        var appid = '';
+        var appkey = '';
+        console.log(appid, appkey)
+        if(AV==undefined)
+            AV.init({
+                appId: appid,
+                appKey: appkey
+            });
+        const query = new AV.Query('Counter');
+        query.equalTo('url', pl);
+        var time = 'Loading...';
+        query.find().then(function (results) {
+            console.log(results)
+            if (results.length == 0) {
+                console.log("0")
+                var NewCounter = AV.Object.extend('Counter');
+                var nc = new NewCounter();
+                nc.save({
+                    time: 1,
+                    title: "luoguP5947 [POI2003]Trinomial 题解",
+                    url: pl,
+                    xid: pl,
+                }).then(function (object) {
+                    $(".hotnum").eq(0).html(1);
+                    $(".hotnum").eq(1).html(1);
+                });
+            } else {
+                id = results[0].id;
+                var todo = AV.Object.createWithoutData('Counter', id);
+                time = results[0].attributes.time + 1;
+                todo.set("time", time);
+                todo.save();
+                console.log(todo);
+                $(".hotnum").eq(0).html(time);
+                $(".hotnum").eq(1).html(time);
+            }
+
+        }, function (error) {
+            console.log(error)
+        });
+    }
+</script>
