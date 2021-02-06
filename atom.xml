@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhangcw-qwq.github.io</id>
     <title>ZhangCW-QwQ</title>
-    <updated>2020-12-24T14:04:14.533Z</updated>
+    <updated>2021-02-06T02:33:52.120Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhangcw-qwq.github.io"/>
     <link rel="self" href="https://zhangcw-qwq.github.io/atom.xml"/>
     <subtitle>这是一个蒟蒻的博客</subtitle>
     <logo>https://zhangcw-qwq.github.io/images/avatar.png</logo>
     <icon>https://zhangcw-qwq.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, ZhangCW-QwQ</rights>
+    <rights>All rights reserved 2021, ZhangCW-QwQ</rights>
     <entry>
         <title type="html"><![CDATA[luoguP5947 [POI2003]Trinomial 题解]]></title>
         <id>https://zhangcw-qwq.github.io/post/luogup5947-poi2003trinomial-ti-jie/</id>
