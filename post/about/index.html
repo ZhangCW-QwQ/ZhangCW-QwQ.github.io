@@ -1,19 +1,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+    <meta name="description" content="坐标 HNHNHN ，F.M.SF.M.SF.M.S  ofofof  changshachangshachangsha ，强省强校的菜鸡 oieroieroier
+爱好打游戏（主要是 wzrywzrywzry ），弹吉他，最近喜欢打篮球 ..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://zhangcw-qwq.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://zhangcw-qwq.github.io/styles/main.css">
     
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/vs2015.min.css">
     
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
@@ -22,6 +16,31 @@
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <!-- 数学公式 -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css"
+        integrity="sha384-9tPv11A+glH/on/wEu99NVwDPwkMQESOocs/ZGXPoIiLE8MU/qkqUcZ3zzL+6DuH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js"
+        integrity="sha384-U8Vrjwb8fuHMt6ewaCy8uqeUXv4oitYACKdB0VziCerzt011iQ/0TqlSlv8MReCm" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/contrib/auto-render.min.js"
+        integrity="sha384-aGfk5kvhIq5x1x5YdvCp4upKZYnA8ckafviDpmWEKp4afOZEqOli7gqSnh8I6enH" crossorigin="anonymous">
+    </script>
+    <script>
+        renderMathInElement(document.body, {
+            delimiters: [{
+                    left: "$$",
+                    right: "$$",
+                    display: true
+                },
+                {
+                    left: "$",
+                    right: "$",
+                    display: false
+                }
+            ]
+        });
+    </script>
+
     
     <title>ZhangCW-QwQ</title>
     
@@ -117,7 +136,7 @@
           
           
           <li>
-            <a href="/post/about">
+            <a href="post/about">
               关于
             </a>
           </li>
@@ -170,7 +189,7 @@
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://zhangcw-qwq.github.io/images/avatar.png?v=1604405766908" class="avatar">
+            <img src="https://zhangcw-qwq.github.io/images/avatar.png?v=1614684249194" class="avatar">
         </div>
         <div class="sitename">ZhangCW-QwQ</div>
         <span class="describtion" data-text='["这是一个蒟蒻的博客"]'>&nbsp;</span>
@@ -184,13 +203,24 @@
     <div class="share-button">
         <span>社交按钮</span>
         
+        <a href="https://github.com/ZhangCW-QwQ" target="_blank"><i style="font-size: 20px;"><img class="icon"
+                    src="https://zhangcw-qwq.github.io/media/images/github.png" alt=""></i></a>
         
         
+        <a onclick="showqq()"><i style="font-size: 20px;"><img class="icon" src="https://zhangcw-qwq.github.io/media/images/QQ.png" alt=""></i></a>
+        
+        
+        <a href="https://www.zhihu.com/people/ming-yue-ye-78-3-41" target="_blank"><i style="font-size: 20px;"><img class="icon"
+                    src="https://zhangcw-qwq.github.io/media/images/zh.png" alt=""></i></a>
+        
+        
+        <a href="https://space.bilibili.com/624171024" target="_blank"><i style="font-size: 20px;"><img class="icon"
+                    src="https://zhangcw-qwq.github.io/media/images/bilibili.png" alt=""></i></a>
         
         
         
     </div>
-    <div id="qq" style="display:none"></div>
+    <div id="qq" style="display:none">1253875792</div>
     
     
     <div class="mchocie describtion">
@@ -218,7 +248,7 @@
     
     
     <div class="mchocie describtion">
-        <a href="/post/about" class="menubutton">
+        <a href="post/about" class="menubutton">
             关于
         </a>
     </div>
@@ -234,6 +264,15 @@
     <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
         href="https://github.com/850552586/gridea-theme-fog">Fog</a></div>
     
+    
+    <script async src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/busuanzi.pure.mini.js"></script>
+    <div id="vistornum">
+        <span id="busuanzi_container_site_uv">
+            <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 总访问量:<span id="busuanzi_value_site_pv"></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <i class="fa fa-user-o" aria-hidden="true"></i> 访问人数:<span id="busuanzi_value_site_uv"></span>
+        </span>
+    </div>
+    <div style="color:white">Copyright © 2020  备案号: 鄂ICP备...号</div>
     
     </div>
 
@@ -395,21 +434,19 @@
         <div class="postshow" style="padding-bottom: 0;">
             
             <div class="postdetailimg" style="width:100%;overflow: hidden;">
-                
-                <img src="/media/images/custom-postdefaultimage.png" class="postimage">
-                
+                <img src="https://zhangcw-qwq.github.io/post-images/about.jpg" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2019-01-25</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
-            <div class="posttag">
-                
+                <div class="postdate"><i class="fa fa-calendar"></i>2021-03-02</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+                <div class="posttag">
+                    
+                </div>
             </div>
-        </div>
-        
+            
         <div id="articlecontent">
             <div id="texttitle" style="text-align: center">
-                <h2>关于</h2>
+                <h2>about</h2>
                 <!-- id 将作为查询条件 -->
                 <div id="pl" style="display:none">https://zhangcw-qwq.github.io/post/about/</div>
                 <div id="rootaddr" style="display:none">https://zhangcw-qwq.github.io</div>
@@ -419,13 +456,9 @@
                 </span>
             </div>
             <div class="text ">
-                <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                <p>坐标 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>H</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">HN</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> ，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi><mi mathvariant="normal">.</mi><mi>M</mi><mi mathvariant="normal">.</mi><mi>S</mi></mrow><annotation encoding="application/x-tex">F.M.S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span></span>  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>o</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">of</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span>  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mi>h</mi><mi>a</mi><mi>n</mi><mi>g</mi><mi>s</mi><mi>h</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">changsha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">h</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">s</span><span class="mord mathdefault">h</span><span class="mord mathdefault">a</span></span></span></span> ，强省强校的菜鸡 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>o</mi><mi>i</mi><mi>e</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">oier</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">o</span><span class="mord mathdefault">i</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span></p>
+<p>爱好打游戏（主要是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>w</mi><mi>z</mi><mi>r</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">wzry</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> ），弹吉他，最近喜欢打篮球 （然而被吊打）</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>H</mi><mi>N</mi><mi>O</mi><mi>I</mi><mn>2021</mn></mrow><annotation encoding="application/x-tex">HNOI2021</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord">2</span><span class="mord">0</span><span class="mord">2</span><span class="mord">1</span></span></span></span> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mi>P</mi><mo>+</mo><mo>+</mo></mrow><annotation encoding="application/x-tex">RP++</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">+</span></span></span></span></p>
 
             </div>
             <hr style="width: 80%;">
@@ -487,7 +520,30 @@
                 <div id="comment"  class="comment" style="background: white">
                     <div class="commentcontainer">
                         
-                        <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                        
+                        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '7b439743a8444319e179',
+    clientSecret: '6eac798f299f2b465d41755b9830718c4125857e',
+    repo: 'comment',
+    owner: 'ZhangCW-QwQ',
+    admin: ['ZhangCW-QwQ'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+                        
+                        
                         
                     </div>
                 </div>
@@ -498,18 +554,72 @@
             </div>
             
         
-        <div class="toc-container">
-            <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
-</ul>
-</li>
-</ul>
+        <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+</head>
+<body>
+    <div class="miniMode">
+        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default">
+        </meting-js>
+    </div>   
+</body>
 
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script>
+    var aplayerid = "2579578369";
+    var aplayerserver = "netease";
+    var aplayerorder = "random";
+    var aplayerautoplay = "false";
+    var aplayer = $("#myaplayer");
+    aplayer.attr("server",aplayerserver);
+    aplayer.attr("id",aplayerid);
+    aplayer.attr("order",aplayerorder);
+    if(aplayerautoplay=="true")
+        aplayer.attr("autoplay","true");
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/Aplayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<script>
+    function aplayerbtnInit(){
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        player.lrc.hide();
+        var mbabtn = $("#mbaplayer");
+        if(player.paused==false)
+        {
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        }
+        else
+        {
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+
+    function aplayerPlay(){
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        var mbabtn = $("#mbaplayer");
+        if(player.paused==true)
+        {
+            player.play();
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        }
+        else
+        {
+            player.pause();
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+</script>
+        
+        <div class="toc-container">
+            
     </div>
     </div>
     </div>
@@ -522,7 +632,7 @@
     </div>
     <div id="bgchoice" style="display: none">default</div>
     
-    <div id="bgurl" style="display:none">/media/images/custom-bgimage.png</div>
+    <div id="bgurl" style="display:none">/media/images/custom-bgimage.jpg</div>
     
     </div>
 </body>
@@ -747,7 +857,7 @@
                 var nc = new NewCounter();
                 nc.save({
                     time: 1,
-                    title: "关于",
+                    title: "about",
                     url: pl,
                     xid: pl,
                 }).then(function (object) {
