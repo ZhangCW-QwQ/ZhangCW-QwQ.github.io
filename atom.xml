@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhangcw-qwq.github.io</id>
     <title>二十四桥明月夜</title>
-    <updated>2021-03-02T13:10:56.536Z</updated>
+    <updated>2021-03-02T13:45:17.770Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhangcw-qwq.github.io"/>
     <link rel="self" href="https://zhangcw-qwq.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://zhangcw-qwq.github.io/images/avatar.png</logo>
     <icon>https://zhangcw-qwq.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 二十四桥明月夜</rights>
+    <entry>
+        <title type="html"><![CDATA[mmp]]></title>
+        <id>https://zhangcw-qwq.github.io/post/mmp/</id>
+        <link href="https://zhangcw-qwq.github.io/post/mmp/">
+        </link>
+        <updated>2021-03-02T13:45:09.000Z</updated>
+        <content type="html"><![CDATA[<p>mmp</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[luoguP5947 [POI2003]Trinomial 题解]]></title>
         <id>https://zhangcw-qwq.github.io/post/luogup5947-poi2003trinomial-ti-jie/</id>
@@ -477,61 +486,6 @@ int main(){
 实际得分：0
 </code></pre>
 <p><s>看都没看</s></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test20201105 考试总结]]></title>
-        <id>https://zhangcw-qwq.github.io/post/test20201105-kao-shi-zong-jie/</id>
-        <link href="https://zhangcw-qwq.github.io/post/test20201105-kao-shi-zong-jie/">
-        </link>
-        <updated>2020-11-06T13:30:36.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="t1-store">T1 store</h2>
-<pre><code>期望时间：20 min
-实际时间：30 min
-期望得分：100
-实际得分：50
-</code></pre>
-<p>贪心处理即可</p>
-<p>但是有很多细节</p>
-<p>比如 unsigned long long</p>
-<p>但是我挂在了没有判 Ai &lt; Bi 时 Ai 是否不大于 S（但是 Ai == Bi 时我判了……）</p>
-<h2 id="t2-portal">T2 portal</h2>
-<pre><code>期望时间：1.5 h
-实际时间：1 h
-期望得分：0
-实际得分：0
-</code></pre>
-<p>当时想到的是对于四个象限各维护一棵线段树</p>
-<p>感觉自己码力不够就先去搞了 T3</p>
-<p>然后就没回来了……</p>
-<p>应该先打 40 分的暴力的……</p>
-<h2 id="t3-purify">T3 purify</h2>
-<pre><code>期望时间：1 h
-实际时间：2 h
-期望得分：0
-实际得分：10
-</code></pre>
-<p>考虑DP</p>
-<p>显然每一列单独计算</p>
-<p>对于每一串同色连续棋子</p>
-<p>维护四个信息：</p>
-<p>dp[i] [0] [0] 将该串棋子及以上的棋子全部缩成一个 0 棋子的代价</p>
-<p>dp[i] [1] [0] 将该串棋子及以上的棋子全部缩成一个 1 棋子的代价</p>
-<p>dp[i] [0] [1] 将该串棋子及以上的棋子全部缩成一串 0 棋子的代价</p>
-<p>dp[i] [1] [1] 将该串棋子及以上的棋子全部缩成一串 1 棋子的代价</p>
-<p>从上往下转移即可</p>
-<p>然而没调出来……</p>
-<h2 id="t4-sun">T4 sun</h2>
-<pre><code>期望时间：30 min
-实际时间：30 min
-期望得分：90
-实际得分：100
-</code></pre>
-<p>Prim 有 60 分</p>
-<p>性质 2 将某条边的权值乘上 n - 1 输出，有 10 分</p>
-<p>性质 3 若全部权值相同则输出 0 ，否则输出 1，有 20 分</p>
-<p>然后就有了 <strong>100</strong> 分的好成绩</p>
-<p>别问我 60 + 10 + 20 为什么是 100……</p>
 ]]></content>
     </entry>
 </feed>
