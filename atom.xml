@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://zhangcw-qwq.github.io</id>
     <title>ZhangCW-QwQ</title>
-    <updated>2021-03-02T10:58:47.199Z</updated>
+    <updated>2021-03-02T11:01:10.836Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://zhangcw-qwq.github.io"/>
+    <link rel="self" href="https://zhangcw-qwq.github.io/atom.xml"/>
     <subtitle>这是一个蒟蒻的博客</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://zhangcw-qwq.github.io/images/avatar.png</logo>
+    <icon>https://zhangcw-qwq.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, ZhangCW-QwQ</rights>
     <entry>
         <title type="html"><![CDATA[luoguP5947 [POI2003]Trinomial 题解]]></title>
-        <id>http://localhost:4000/post/luogup5947-poi2003trinomial-ti-jie/</id>
-        <link href="http://localhost:4000/post/luogup5947-poi2003trinomial-ti-jie/">
+        <id>https://zhangcw-qwq.github.io/post/luogup5947-poi2003trinomial-ti-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/luogup5947-poi2003trinomial-ti-jie/">
         </link>
         <updated>2020-12-10T09:35:28.000Z</updated>
         <content type="html"><![CDATA[<p>前置芝士：</p>
@@ -64,8 +64,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[noip2020 退役记]]></title>
-        <id>http://localhost:4000/post/noip2020-tui-yi-ji/</id>
-        <link href="http://localhost:4000/post/noip2020-tui-yi-ji/">
+        <id>https://zhangcw-qwq.github.io/post/noip2020-tui-yi-ji/</id>
+        <link href="https://zhangcw-qwq.github.io/post/noip2020-tui-yi-ji/">
         </link>
         <updated>2020-12-08T09:46:07.000Z</updated>
         <content type="html"><![CDATA[<h3 id="20201204">2020.12.04</h3>
@@ -150,8 +150,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[test20201125 考试总结]]></title>
-        <id>http://localhost:4000/post/test20201125-kao-shi-zong-jie/</id>
-        <link href="http://localhost:4000/post/test20201125-kao-shi-zong-jie/">
+        <id>https://zhangcw-qwq.github.io/post/test20201125-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201125-kao-shi-zong-jie/">
         </link>
         <updated>2020-12-08T09:44:39.000Z</updated>
         <content type="html"><![CDATA[<h2 id="t1-sudoku">T1 sudoku</h2>
@@ -194,8 +194,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[test20201124 考试总结]]></title>
-        <id>http://localhost:4000/post/test20201124-kao-shi-zong-jie/</id>
-        <link href="http://localhost:4000/post/test20201124-kao-shi-zong-jie/">
+        <id>https://zhangcw-qwq.github.io/post/test20201124-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201124-kao-shi-zong-jie/">
         </link>
         <updated>2020-12-08T09:43:32.000Z</updated>
         <content type="html"><![CDATA[<h2 id="t1-coordinated">T1 coordinated</h2>
@@ -238,8 +238,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[test20201122 考试总结]]></title>
-        <id>http://localhost:4000/post/test20201122-kao-shi-zong-jie/</id>
-        <link href="http://localhost:4000/post/test20201122-kao-shi-zong-jie/">
+        <id>https://zhangcw-qwq.github.io/post/test20201122-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201122-kao-shi-zong-jie/">
         </link>
         <updated>2020-12-08T09:42:41.000Z</updated>
         <content type="html"><![CDATA[<h2 id="t1-road">T1 road</h2>
@@ -291,8 +291,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[test20201121 考试总结]]></title>
-        <id>http://localhost:4000/post/test20201121-kao-shi-zong-jie/</id>
-        <link href="http://localhost:4000/post/test20201121-kao-shi-zong-jie/">
+        <id>https://zhangcw-qwq.github.io/post/test20201121-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201121-kao-shi-zong-jie/">
         </link>
         <updated>2020-12-08T09:41:52.000Z</updated>
         <content type="html"><![CDATA[<h2 id="t1-garden">T1 garden</h2>
@@ -337,8 +337,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[test20201119 考试总结]]></title>
-        <id>http://localhost:4000/post/test20201119-kao-shi-zong-jie/</id>
-        <link href="http://localhost:4000/post/test20201119-kao-shi-zong-jie/">
+        <id>https://zhangcw-qwq.github.io/post/test20201119-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201119-kao-shi-zong-jie/">
         </link>
         <updated>2020-12-08T09:40:24.000Z</updated>
         <content type="html"><![CDATA[<h2 id="t1-bit">T1 bit</h2>
@@ -382,8 +382,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[CSP2020 保灵记]]></title>
-        <id>http://localhost:4000/post/csp2020-kao-shi-zong-jie/</id>
-        <link href="http://localhost:4000/post/csp2020-kao-shi-zong-jie/">
+        <id>https://zhangcw-qwq.github.io/post/csp2020-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/csp2020-kao-shi-zong-jie/">
         </link>
         <updated>2020-11-09T07:59:52.000Z</updated>
         <content type="html"><![CDATA[<h2 id="t1-julian">T1 julian</h2>
@@ -440,8 +440,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[test20201106 考试总结]]></title>
-        <id>http://localhost:4000/post/test20201106-kao-shi-zong-jie/</id>
-        <link href="http://localhost:4000/post/test20201106-kao-shi-zong-jie/">
+        <id>https://zhangcw-qwq.github.io/post/test20201106-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201106-kao-shi-zong-jie/">
         </link>
         <updated>2020-11-06T13:32:44.000Z</updated>
         <content type="html"><![CDATA[<h2 id="t1-sort">T1 sort</h2>
@@ -481,8 +481,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[test20201105 考试总结]]></title>
-        <id>http://localhost:4000/post/test20201105-kao-shi-zong-jie/</id>
-        <link href="http://localhost:4000/post/test20201105-kao-shi-zong-jie/">
+        <id>https://zhangcw-qwq.github.io/post/test20201105-kao-shi-zong-jie/</id>
+        <link href="https://zhangcw-qwq.github.io/post/test20201105-kao-shi-zong-jie/">
         </link>
         <updated>2020-11-06T13:30:36.000Z</updated>
         <content type="html"><![CDATA[<h2 id="t1-store">T1 store</h2>
