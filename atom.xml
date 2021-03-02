@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhangcw-qwq.github.io</id>
-    <title>ZhangCW-QwQ</title>
-    <updated>2021-03-02T11:55:14.639Z</updated>
+    <title>二十四桥明月夜</title>
+    <updated>2021-03-02T12:20:45.731Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhangcw-qwq.github.io"/>
     <link rel="self" href="https://zhangcw-qwq.github.io/atom.xml"/>
     <subtitle>这是一个蒟蒻的博客</subtitle>
     <logo>https://zhangcw-qwq.github.io/images/avatar.png</logo>
     <icon>https://zhangcw-qwq.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, ZhangCW-QwQ</rights>
+    <rights>All rights reserved 2021, 二十四桥明月夜</rights>
     <entry>
         <title type="html"><![CDATA[luoguP5947 [POI2003]Trinomial 题解]]></title>
         <id>https://zhangcw-qwq.github.io/post/luogup5947-poi2003trinomial-ti-jie/</id>
